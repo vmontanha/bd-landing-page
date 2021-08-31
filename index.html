@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <link rel="shortcut icon" href="assets/img/logo-reduzido.png" type="image/png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== REMIXICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="assets/img/logo-reduzido.png" type="image/png">
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-        <title>BD Produtos</title>
-    </head>
-    <body>
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="index.html" class="nav__logo">
-                    <img src="assets/img/Logo_BD_SVG.svg" alt="">
-                </a>
-                <!-- <div class="nav__menu" id="nav-menu">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- or the reference on CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+    <title>BD Produtos</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="assets/img/Logo_BD_SVG.svg" alt="">
+            </a>
+            <!-- <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a href="#home" class="nav__link active-link">Home</a>
@@ -48,64 +53,164 @@
                     <i class="ri-close-line nav__close" id="nav-close"></i>
                 </div> -->
 
-                <!-- <div class="nav__toggle" id="nav-toggle">
+            <!-- <div class="nav__toggle" id="nav-toggle">
                     <i class="ri-function-line"></i>
                 </div> -->
-            </nav>
-        </header>
+        </nav>
+    </header>
 
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home" id="home">
-                <!-- <img src="assets/img/herooverlay.png" alt="" class="home__img"> -->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <!-- <img src="assets/img/herooverlay.png" alt="" class="home__img"> -->
 
-                <div class="home__container container grid">
-                    <div class="home__data">
-                        <h1 class="home__data-title">Conheça todos nossos produtos</h1>
-                        <span class="home__data-subtitle">Navegue no menu abaixo, a categoria e o produto que deseja visualizar.</span>
-                    </div>
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__data-title">Conheça todos nossos produtos</h1>
+                    <span class="home__data-subtitle">Navegue no menu abaixo, a categoria e o produto que deseja
+                        visualizar.</span>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- <a href="#" onclick="window.scrollTo(0, 730);" class="scrollup" id="scroll-up">
+        <!-- <a href="#" onclick="window.scrollTo(0, 730);" class="scrollup" id="scroll-up">
                 <i class="ri-arrow-down-line scrollup__icon"></i>
             </a> -->
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <div class="about__container container grid">
-                    <div class="about__data">
-                        <span class="about__description" style="color: #F26722;">Anestesia</span>
-                        <h1 class="section__title about__title">Nexiva - 9.6mb</h1>
-                        <div class="about__grey">
-                            <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae nisi non odio ornare luctus. Nullam non enim est. Proin eu finibus nibh, id volutpat tortor. Pellentesque mi nisi, finibus vel placerat vel, feugiat ut ligula. Aliquam sapien tortor, ornare vel convallis non, commodo nec risus. Sed convallis blandit lorem nec mollis. Proin porta volutpat quam, vel lobortis sem iaculis et. Integer et aliquam orci, non tristique sem
-                        </div>
-                        </p>
-                        <div class="about__content">
-                            <a href="#"><i class="ri-volume-up-line audio-in"></i></a>
-                            <a href="#"><i class="ri-video-line audio-in"></i></a>
-                            <a href="#"><i class="ri-aspect-ratio-line audio-in"></i></a>
-                        </div>
-                        <div class="change__items">
-                            <a href="#2" style="padding-top: 5px;"><i class="ri-arrow-left-s-fill change__products">  </i></a>
-                            Navegar entre Produtos
-                            <a href="#2" style="padding-top: 5px;"><i class="ri-arrow-right-s-fill change__products">  </i></a>
-                        </div>
-                        
-                    </div>
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div id="primary-slider" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="about__container container grid">
+                                <div class="about__data">
+                                    <span class="about__description" style="color: #F26722;">Anestesia</span>
+                                    <h1 class="section__title about__title">Nexiva - 9.6mb</h1>
+                                    <div class="about__grey">
+                                        <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae nisi non odio ornare luctus. Nullam non enim est. Proin eu finibus nibh, id volutpat tortor. Pellentesque mi nisi, finibus vel placerat vel, feugiat ut ligula. Aliquam sapien tortor, ornare vel convallis non, commodo nec risus. Sed convallis blandit lorem nec mollis. Proin porta volutpat quam, vel lobortis sem iaculis et. Integer et aliquam orci, non tristique sem
+                                    </div>
+                                    </p>
+                                    <div class="about__content">
+                                        <a href="#"><i class="ri-volume-up-line audio-in"></i></a>
+                                        <a href="#"><i class="ri-video-line audio-in"></i></a>
+                                        <a href="#"><i class="ri-aspect-ratio-line audio-in"></i></a>
+                                    </div>
+                                </div>
+                
+                                <div class="about__img">
+                                    <iframe
+                                    id="3ef13c1f-5755-4935-9d49-1ef63b71424d"
+                                    src="https://www.vectary.com/viewer/v1/?model=3ef13c1f-5755-4935-9d49-1ef63b71424d&env=studio1"
+                                    frameborder="0"
+                                    width="100%"
+                                    height="480"
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="about__container container grid">
+                                <div class="about__data">
+                                    <span class="about__description" style="color: #F26722;">Anestesia</span>
+                                    <h1 class="section__title about__title">Nexiva - 9.6mb</h1>
+                                    <div class="about__grey">
+                                        <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae nisi non odio ornare luctus. Nullam non enim est. Proin eu finibus nibh, id volutpat tortor. Pellentesque mi nisi, finibus vel placerat vel, feugiat ut ligula. Aliquam sapien tortor, ornare vel convallis non, commodo nec risus. Sed convallis blandit lorem nec mollis. Proin porta volutpat quam, vel lobortis sem iaculis et. Integer et aliquam orci, non tristique sem
+                                    </div>
+                                    </p>
+                                    <div class="about__content">
+                                        <a href="#"><i class="ri-volume-up-line audio-in"></i></a>
+                                        <a href="#"><i class="ri-video-line audio-in"></i></a>
+                                        <a href="#"><i class="ri-aspect-ratio-line audio-in"></i></a>
+                                    </div>
+                                </div>
+                
+                                <div class="about__img">
+                                    <iframe
+                                    id="3ef13c1f-5755-4935-9d49-1ef63b71424d"
+                                    src="https://www.vectary.com/viewer/v1/?model=3ef13c1f-5755-4935-9d49-1ef63b71424d&env=studio1"
+                                    frameborder="0"
+                                    width="100%"
+                                    height="480"
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="about__container container grid">
+                                <div class="about__data">
+                                    <span class="about__description" style="color: #F26722;">Anestesia</span>
+                                    <h1 class="section__title about__title">Nexiva - 9.6mb</h1>
+                                    <div class="about__grey">
+                                        <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae nisi non odio ornare luctus. Nullam non enim est. Proin eu finibus nibh, id volutpat tortor. Pellentesque mi nisi, finibus vel placerat vel, feugiat ut ligula. Aliquam sapien tortor, ornare vel convallis non, commodo nec risus. Sed convallis blandit lorem nec mollis. Proin porta volutpat quam, vel lobortis sem iaculis et. Integer et aliquam orci, non tristique sem
+                                    </div>
+                                    </p>
+                                    <div class="about__content">
+                                        <a href="#"><i class="ri-volume-up-line audio-in"></i></a>
+                                        <a href="#"><i class="ri-video-line audio-in"></i></a>
+                                        <a href="#"><i class="ri-aspect-ratio-line audio-in"></i></a>
+                                    </div>
+                                </div>
+                
+                                <div class="about__img">
+                                    <iframe
+                                    id="3ef13c1f-5755-4935-9d49-1ef63b71424d"
+                                    src="https://www.vectary.com/viewer/v1/?model=3ef13c1f-5755-4935-9d49-1ef63b71424d&env=studio1"
+                                    frameborder="0"
+                                    width="100%"
+                                    height="480"
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="secondary-slider" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img
+                                src="https://2.bp.blogspot.com/-vEj-G9pgXKY/XsBF8K-lmGI/AAAAAAACShY/uSyYT32lvr48sYc9T4oPT11cCRuessxJwCLcBGAsYHQ/s1600/wallpaper.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="https://images2.alphacoders.com/994/994064.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img
+                                src="https://p4.wallpaperbetter.com/wallpaper/574/488/34/mountains-dark-landscape-long-exposure-wallpaper-preview.jpg">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-                    <div class="about__img">
-                        <iframe
-                        id="3ef13c1f-5755-4935-9d49-1ef63b71424d"
-                        src="https://www.vectary.com/viewer/v1/?model=3ef13c1f-5755-4935-9d49-1ef63b71424d&env=studio1"
-                        frameborder="0"
-                        width="100%"
-                        height="480"
-                        ></iframe>
+        <!-- <div class="about__container container grid">
+                <div class="about__data">
+                    <span class="about__description" style="color: #F26722;">Anestesia</span>
+                    <h1 class="section__title about__title">Nexiva - 9.6mb</h1>
+                    <div class="about__grey">
+                        <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae nisi non odio ornare luctus. Nullam non enim est. Proin eu finibus nibh, id volutpat tortor. Pellentesque mi nisi, finibus vel placerat vel, feugiat ut ligula. Aliquam sapien tortor, ornare vel convallis non, commodo nec risus. Sed convallis blandit lorem nec mollis. Proin porta volutpat quam, vel lobortis sem iaculis et. Integer et aliquam orci, non tristique sem
+                    </div>
+                    </p>
+                    <div class="about__content">
+                        <a href="#"><i class="ri-volume-up-line audio-in"></i></a>
+                        <a href="#"><i class="ri-video-line audio-in"></i></a>
+                        <a href="#"><i class="ri-aspect-ratio-line audio-in"></i></a>
                     </div>
                 </div>
-            </section>
-            
-            <!-- ==================== DISCOVER ====================
+
+                <div class="about__img">
+                    <iframe
+                    id="3ef13c1f-5755-4935-9d49-1ef63b71424d"
+                    src="https://www.vectary.com/viewer/v1/?model=3ef13c1f-5755-4935-9d49-1ef63b71424d&env=studio1"
+                    frameborder="0"
+                    width="100%"
+                    height="480"
+                    ></iframe>
+                </div>
+            </div> -->
+
+        <!-- ==================== DISCOVER ====================
             <section class="discover section" id="discover">
                 <h2 class="section__title">Discover the most <br> attractive places</h2>
                 
@@ -362,42 +467,70 @@
                     </div>
                 </div>
             </section> -->
-        </main>
+    </main>
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer section" id="footer">
-            <div class="footer__container container grid">
-                <div class="footer__rights">
-                    <div class="footer__content grid">
-                        <div>
-                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
-                                <i class="ri-facebook-box-fill"></i>
-                            </a>
-                            <a href="https://twitter.com/" target="_blank" class="footer__social">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
-                                <i class="ri-instagram-fill"></i>
-                            </a>
-                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
-                                <i class="ri-youtube-fill"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="footer__copy">© 2021 BD. Todos os direitos reservados. Salvo disposição em contrato, BD, o Logo BD e todas as outras marcas comerciais são de propriedade da Becton, Dickinson e Companhia.</p>
-                        <img class="logo-footer" src="assets/img/Logo_BD_SVG.svg" alt="Logo BD">
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section" id="footer">
+        <div class="footer__container container grid">
+            <div class="footer__rights">
+                <div class="footer__content grid">
+                    <div>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
                     </div>
                 </div>
+                <p class="footer__copy">© 2021 BD. Todos os direitos reservados. Salvo disposição em contrato, BD, o
+                    Logo BD e todas as outras marcas comerciais são de propriedade da Becton, Dickinson e Companhia.</p>
+                <img class="logo-footer" src="assets/img/Logo_BD_SVG.svg" alt="Logo BD">
             </div>
-        </footer>
+        </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+	var secondarySlider = new Splide( '#secondary-slider', {
+		fixedWidth  : 100,
+		height      : 60,
+		gap         : 10,
+		cover       : true,
+		isNavigation: true,
+        pagination: false,
+		focus       : 'center',
+		breakpoints : {
+			'600': {
+				fixedWidth: 66,
+				height    : 40,
+			}
+		},
+	} ).mount();
+	
+	var primarySlider = new Splide( '#primary-slider', {
+		type       : 'fade',
+		heightRatio: 0.5,
+		pagination : false,
+		arrows     : false,
+		cover      : false,
+	} ); // do not call mount() here.
+	
+	primarySlider.sync( secondarySlider ).mount();
+} );
+    </script>
 
-        <!--=============== SCROLL REVEAL===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
-        
-        <!--=============== SWIPER JS ===============-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
