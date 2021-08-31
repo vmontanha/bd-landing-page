@@ -1083,7 +1083,11 @@ input {
 @media screen and (max-width: 546px) {
   .home__data {
     text-align: center;
-    
+
+  }
+
+  #home {
+    height: 80vh;
   }
   .logo-footer {
     width: 100px;
