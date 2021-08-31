@@ -345,7 +345,6 @@ input {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-2-5);
-  margin-top: 100px;
 }
 
 .home__social {
@@ -1084,10 +1083,6 @@ input {
   .home__data {
     text-align: center;
 
-  }
-
-  #home {
-    height: 80vh;
   }
   .logo-footer {
     width: 100px;
