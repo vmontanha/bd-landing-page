@@ -1083,12 +1083,7 @@ input {
 @media screen and (max-width: 546px) {
   .home__data {
     text-align: center;
-  }
-  .scrollup {
-    right: 46%;
-    text-align: center;
-    margin-top: 200px;
-    bottom: 10%;
+    
   }
   .logo-footer {
     width: 100px;
@@ -1100,5 +1095,7 @@ input {
   .footer__copy {
     margin-left: 30px;
     margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
