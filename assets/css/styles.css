@@ -439,10 +439,23 @@ input {
   row-gap: 2.5rem;
 }
 
+.change__products{
+  font-size: 24px;
+  color: #04488C;
+}
+.change__items {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: left;
+  padding-top: 50px;
+}
+  
 .about__grey {
   background-color: #F0F0F0;
   color: #4B4B4B;
-  padding: 30px;
+  padding: 20px;
   border-radius: 20px;
   margin-bottom: 2rem;
 }
@@ -1109,5 +1122,13 @@ input {
   }
   .footer__container {
     padding-left: 1.25rem !important;
+  }
+  .change__items {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    padding-top: 50px;
   }
 }
