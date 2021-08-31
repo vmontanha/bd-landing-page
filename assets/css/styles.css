@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -25,9 +26,9 @@
 
   /*========== Font and typography ==========*/
   --body-font: 'Open Sans', sans-serif;
-  --title-font: 'Raleway', sans-serif;
+  --title-font: 'Montserrat', sans-serif;
   --biggest-font-size: 2.5rem;
-  --h1-font-size: 1.5rem;
+  --h1-font-size: 42px;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
   --normal-font-size: .938rem;
@@ -299,14 +300,14 @@ input {
 
 /*=============== HOME ===============*/
 #home {
-  background-image: url('../img/herooverlay.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../img/herooverlay.png");
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
-  top: 120px;
-  height: 80vh;
+  top: 50px;
+  height: 100vh;
   margin-bottom: 100px;
   position: relative;
 }
@@ -335,7 +336,8 @@ input {
 
 .home__data-subtitle {
   display: block;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 22px;
   margin-bottom: var(--mb-0-75);
 }
 
@@ -343,6 +345,7 @@ input {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-2-5);
+  margin-top: 100px;
 }
 
 .home__social {
@@ -927,7 +930,9 @@ input {
     grid-template-rows: 1.8fr .5fr;
   }
   .home__data {
-    align-self: flex-end;
+    align-self: center;
+    text-align: center;
+    margin-top: 300px;
   }
   .home__social {
     flex-direction: row;
@@ -1078,7 +1083,6 @@ input {
 @media screen and (max-width: 546px) {
   .home__data {
     text-align: center;
-    margin-top: 300px;
   }
   .scrollup {
     right: 46%;
