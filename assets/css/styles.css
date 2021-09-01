@@ -894,6 +894,9 @@ input {
     width: 470px;
     margin: 0 auto;
   }
+  .nav {
+    height: 100px
+  }
 }
 
 @media screen and (min-width: 768px) {
