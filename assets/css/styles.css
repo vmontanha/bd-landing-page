@@ -498,9 +498,9 @@ input {
   margin: 0%;
 }
 
-.about__content a{
+.about__content{
   display: inline;
-  z-index: 99999999 !important;
+  z-index: 9999 !important;
 }
 /*=============== DISCOVER ===============*/
 .discover__card {
