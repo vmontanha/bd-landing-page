@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @font-face {
   font-family: TitleFont;
-  src: url('../fonts/SF-Pro-Display-Light.otf');
+  src: url('../fonts/SF-Pro-Display-Thin.otf');
 }
 
 @font-face {
@@ -458,7 +458,7 @@ input {
 }
   
 .about__grey {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0cc;
   color: #4B4B4B;
   padding: 20px;
   border-radius: 20px;
@@ -789,7 +789,7 @@ input {
 }
 .logo-footer {
   padding-left: 10px;
-  width: 100px;
+  width: 90px;
 }
 .footer__social {
   font-size: 1.209rem;
