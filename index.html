@@ -18,7 +18,202 @@
 
     <!-- or the reference on CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-    
+
+    <script type="module">
+        import { VctrApi } from "https://www.vectary.com/viewer-api/v1/api.js";
+
+        let vctrApi;
+        let explodingViewBtn = document.getElementById("exploding-view");
+        let animationInProgress = false;
+
+        function addListeners() {
+            explodingViewBtn.addEventListener("click", async _event => {
+                if (!animationInProgress) {
+                    animationInProgress = true;
+                    await doAnimation();
+                    animationInProgress = false;
+                }
+            });
+        }
+
+        function subVectors(v1, v2) {
+            return [v1[0] - v2[0], v1[1] - v2[1], v1[2] - v2[2]];
+        }
+
+        function addVectors(v1, v2) {
+            return [v1[0] + v2[0], v1[1] + v2[1], v1[2] + v2[2]];
+        }
+
+        function multiplyVectorByScalar(v1, scalar) {
+            return [v1[0] * scalar, v1[1] * scalar, v1[2] * scalar];
+        }
+
+        function animationRocket(animationDelta, objectName, startPosition, endPosition, startRotation, endRotation) {
+            const currentPos = multiplyVectorByScalar(subVectors(endPosition, startPosition), animationDelta);
+            const newPos = addVectors(startPosition, currentPos);
+            vctrApi.setPositionAbsolute(objectName, newPos);
+
+            const currentRotation = multiplyVectorByScalar(subVectors(endRotation, startRotation), animationDelta);
+            const newRotation = addVectors(startRotation, currentRotation);
+            vctrApi.setRotationAbsolute(objectName, newRotation);
+        }
+
+        function animationFrame(objectName, position, rotation, scale) {
+            if (position !== null) {
+                vctrApi.setPositionAbsolute(objectName, position);
+            }
+
+            if (rotation !== null) {
+                vctrApi.setRotationAbsolute(objectName, rotation);
+            }
+
+            if (scale !== null) {
+                vctrApi.setScaleAbsolute(objectName, scale);
+            }
+        }
+
+        function animationBaseStation(animationDelta, baseStationChildren) {
+            baseStationChildren.forEach(child => {
+                const newPosDelta = subVectors([0, 0, -0.05], child.position);
+                const mag = Math.sqrt(Math.pow(newPosDelta[0], 2) + Math.pow(newPosDelta[1], 2) + Math.pow(newPosDelta[2], 2));
+                const newPosNormalized = [newPosDelta[0] / mag, newPosDelta[1] / mag, newPosDelta[2] / mag];
+
+                vctrApi.setPositionAbsolute(
+                    child.name,
+                    [
+                        child.position[0] + ((child.position[0] + newPosNormalized[0]) * 10 * animationDelta),
+                        child.position[1] + ((child.position[1] + newPosNormalized[1]) * 10 * animationDelta),
+                        child.position[2] + ((child.position[2] + newPosNormalized[2]) * 10 * animationDelta)
+                    ]
+                );
+                vctrApi.setScaleAbsolute(
+                    child.name,
+                    [
+                        child.scale[0] + (0.01 * animationDelta),
+                        child.scale[1] + (0.01 * animationDelta),
+                        child.scale[2] + (0.01 * animationDelta)
+                    ]
+                );
+
+                vctrApi.setRotationAbsolute(
+                    child.name,
+                    [
+                        child.rotation[0],
+                        child.rotation[1],
+                        child.rotation[2] - (100 * animationDelta)
+                    ]
+                );
+            });
+        }
+
+        function doAnimation() {
+            return new Promise(async (resolve, _reject) => {
+
+                await vctrApi.setVisibility(["Smoke"], false);
+
+                const rocketOrigPosition = await vctrApi.getPosition("Rocket");
+                const rocketOrigRotation = await vctrApi.getRotation("Rocket");
+
+                const rocksOrigScale = await vctrApi.getScale("Rocks");
+                const rocksOrigRotation = await vctrApi.getRotation("Rocks");
+
+                const asteroidOrigPos = await vctrApi.getPosition("Asteroid_Large_1");
+                const asteroidOrigRotation = await vctrApi.getRotation("Asteroid_Large_1");
+
+                const baseStationGroup = await vctrApi.getObjectByName("BaseStation");
+                const baseStationChildren = [];
+                for (let i = 0; i < baseStationGroup.childrenNames.length; i++) {
+                    const childName = baseStationGroup.childrenNames[i];
+                    baseStationChildren.push({
+                        name: childName,
+                        position: await vctrApi.getPosition(childName),
+                        rotation: await vctrApi.getRotation(childName),
+                        scale: await vctrApi.getScale(childName)
+                    });
+                }
+
+                VctrApi.Utils.animate(
+                    10000,
+                    t => {
+                        let dt = (t * 2);
+                        if (dt > 1) {
+                            dt = 2 * (1 - t);
+                        }
+                        return VctrApi.Utils.easeInOutExpo(dt);
+                    },
+                    animationDelta => {
+                        animationRocket(
+                            animationDelta,
+                            "Rocket",
+                            rocketOrigPosition,
+                            [-1, -1, 2],
+                            rocketOrigRotation,
+                            [rocketOrigRotation[0], 180 - rocketOrigRotation[1], rocketOrigRotation[2]]);
+
+                        animationFrame(
+                            "Rocks",
+                            null,
+                            [0, rocksOrigRotation[0] + (360 * animationDelta), 0],
+                            [
+                                rocksOrigScale[0] + (4 * animationDelta),
+                                rocksOrigScale[1] + (4 * animationDelta),
+                                rocksOrigScale[2] + (4 * animationDelta)
+                            ]
+                        );
+
+                        animationFrame(
+                            "Asteroid_Large_1",
+                            [
+                                asteroidOrigPos[0] - (100 * animationDelta),
+                                asteroidOrigPos[1] + (100 * animationDelta),
+                                asteroidOrigPos[2]
+                            ],
+                            [
+                                asteroidOrigRotation[0],
+                                asteroidOrigRotation[1],
+                                asteroidOrigRotation[2] + (360 * animationDelta)
+                            ],
+                            null
+                        );
+
+                        animationBaseStation(animationDelta, baseStationChildren);
+                    },
+                    () => {
+                        console.log("Exploding view animation finished");
+                        resolve();
+                    }
+                );
+            });
+        }
+
+        async function run() {
+            function errHandler(err) {
+                console.log("API error", err);
+            }
+
+            async function onReady() {
+                console.log("API ready..");
+                // console.log(await vctrApi.getObjects());
+            }
+
+            vctrApi = new VctrApi("test", errHandler);
+            try {
+                await vctrApi.init();
+            } catch (e) {
+                errHandler(e);
+            }
+
+            addListeners();
+            onReady();
+        }
+
+        run();
+
+    </script>
+
+
+
+
     <title>BD Produtos</title>
 </head>
 
@@ -104,9 +299,7 @@
                                 </div>
 
                                 <div class="about__img">
-                                    <iframe id="7aa4e5a8-8a4b-4b65-aaac-a00e036daab6"
-                                        src="https://www.vectary.com/viewer/v1/?model=7aa4e5a8-8a4b-4b65-aaac-a00e036daab6&env=studio1&noAr=1&panX=0&panY=0"
-                                        frameborder="0" width="100%" height="600px"></iframe>
+                                    <iframe id="test" src="https://www.vectary.com/viewer/v1/?model=d6c1f27d-6a27-4c7e-bd7d-bd19d7faa56c&turnTable=0&enableApi=1" allowtransparency="true" frameborder="0" width="100%" height="700">
                                 </div>
                             </div>
                         </li>
@@ -403,6 +596,9 @@
                     </ul>
                 </div>
             </div>
+            <span id="button-group">
+                <button id="exploding-view">Exploding view</button>
+            </span>
             <div id="secondary-slider" class="splide" style="    visibility: visible;
             display: flex;
             overflow: hidden;
@@ -410,7 +606,7 @@
             justify-content: center;
             align-items: stretch;">
                 <div class="splide__track">
-                    <ul class="splide__list" style="display: flexbox; flex-direction: row; align-content: flex-start;" >
+                    <ul class="splide__list" style="display: flexbox; flex-direction: row; align-content: flex-start;">
                         <li class="splide__slide" style="cursor: pointer;">
                             <img
                                 src="https://2.bp.blogspot.com/-vEj-G9pgXKY/XsBF8K-lmGI/AAAAAAACShY/uSyYT32lvr48sYc9T4oPT11cCRuessxJwCLcBGAsYHQ/s1600/wallpaper.jpg">
