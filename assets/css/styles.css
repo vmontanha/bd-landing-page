@@ -46,7 +46,7 @@
   --h1-font-size: 42px;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
+  --normal-font-size: 12px;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
@@ -456,6 +456,11 @@ input {
   justify-content: left;
   padding-top: 50px;
 }
+
+.about__grey p {
+  font-size: 12px;
+  line-height: 23px;
+}
   
 .about__grey {
   background-color: #f0f0f0cc;
@@ -465,6 +470,7 @@ input {
   margin-bottom: 2rem;
   font-family: var(--title-font);
   -webkit-font-smoothing: antialiased;
+  width: 30%;
 }
 
 .about__img {
@@ -1116,6 +1122,13 @@ input {
   .home__data {
     text-align: center;
 
+  }
+  .about__grey {
+    margin-right: auto;
+    left: 0;
+    top: 0;
+    width: 50%;
+    margin-left: auto;
   }
   .about__img {
     margin-left: auto;
