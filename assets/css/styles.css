@@ -319,7 +319,7 @@ input {
   background-position: center;
   background-size: cover;
   position: relative;
-  top: 50px;
+  top: 0;
   height: 100vh;
   margin-bottom: 100px;
   position: relative;
@@ -1181,7 +1181,7 @@ input {
   }
   iframe {
     height: 100vh !important;
-    top: 20%;
+    top: 40%;
     position: absolute;
   }
 }
