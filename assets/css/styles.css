@@ -319,8 +319,8 @@ input {
   background-position: top;
   background-size: cover;
   position: relative;
-  top: 50px;
-  height: 80vh;
+  top: 0;
+  height: 80vh !important;
   margin-bottom: 100px;
 }
 
@@ -1138,6 +1138,7 @@ input {
   }
 
   #home {
+    top: 0 !important;
     height: 50vh;
   }
 
