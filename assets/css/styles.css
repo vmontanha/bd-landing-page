@@ -1163,10 +1163,10 @@ input {
   
   .nav__list {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2.3rem;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 2.3rem !important;
     color: #4B4B4B;
   }
   
