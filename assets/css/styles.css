@@ -1051,7 +1051,7 @@ input {
     left: 0;
     width: 50%;
     margin-left: auto;
-    margin-top: 120%;
+    margin-top: 100%;
   }
   .about__img {
     margin-right: auto;
@@ -1059,7 +1059,7 @@ input {
     position: absolute;
     width: 100%;
     margin: 0;
-    top: 90%;
+    top: 120%;
     left: 0;
   }
 
@@ -1111,7 +1111,7 @@ input {
   iframe {
     position: static;
     margin: 0;
-    height: 50vh !important;
+    height: 40vh !important;
   }
   .nav {
     height: auto;
