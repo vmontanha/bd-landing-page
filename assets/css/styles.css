@@ -1051,14 +1051,15 @@ input {
     left: 0;
     width: 50%;
     margin-left: auto;
+    margin-top: 150%;
   }
   .about__img {
     margin-right: auto;
     margin-left: auto;
-    position: relative;
+    position: absolute;
     width: 100%;
     margin: 0;
-    top: 100%;
+    top: 80%;
     left: 0;
   }
 
@@ -1085,7 +1086,6 @@ input {
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
-    padding-left: 10%;
     margin-bottom: 30px;
   }
   
@@ -1111,7 +1111,7 @@ input {
   iframe {
     position: static;
     margin: 0;
-    height: 80vh !important; 
+    height: 80vh !important;
   }
   .nav {
     height: auto;
