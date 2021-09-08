@@ -1133,6 +1133,10 @@ input {
     position: relative;
     background-color: #F2F2F2;
   }
+
+  .nav__item {
+    padding: 2% !important;
+  }
   
   .nav__list {
     display: flex;
