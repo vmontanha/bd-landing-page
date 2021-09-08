@@ -1061,8 +1061,11 @@ input {
     flex-direction: row !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
-    gap: 1rem;
     color: #4B4B4B;
+  }
+
+  .nav__item {
+    padding: 5% !important;
   }
   
   .nav__link {
