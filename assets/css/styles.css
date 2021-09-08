@@ -1145,8 +1145,6 @@ input {
   .nav {
     height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
   
   .nav__logo, .nav__toggle {
