@@ -1162,3 +1162,9 @@ input {
     padding: 30px;
   }
 }
+
+@media screen and (min-height: 640px) {
+  .about__img {
+    top: 100%;
+  }
+}
