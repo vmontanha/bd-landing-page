@@ -357,7 +357,7 @@ input {
   flex-wrap: wrap !important;
   justify-content: center !important;
   color: #4B4B4B;
-  gap: 7%;
+  gap: 10%;
 }
 
 .nav__link {
@@ -1155,6 +1155,5 @@ input {
     background-color: #F2F2F2;
     height: auto;
     padding: 30px;
-    
   }
 }
