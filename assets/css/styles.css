@@ -1157,6 +1157,9 @@ input {
     transform: skewX(0deg);
     border-bottom: 1px solid #CECECE;
     padding: 0;
+    padding-left: 20px;
+    padding-right: 37px;
+    /* border-right: 1px solid #CECECE; */
     border-right: none;
   }
   
