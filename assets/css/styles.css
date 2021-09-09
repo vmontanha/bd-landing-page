@@ -25,7 +25,7 @@
 /* Style the tab content */
 .about__container.tabcontent {
   display: none;
-  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  animation: fadeEffect 2s; /* Fading effect takes 1 second */
 }
 
 /*=============== VARIABLES CSS ===============*/
@@ -212,7 +212,7 @@ input {
   background-size: cover;
   position: relative;
   top: 0;
-  height: 50vh !important;
+  height: 70vh !important;
 }
 
 .home__data {
@@ -340,6 +340,7 @@ input {
   height: auto;
   display: inline;
   width: 100%;
+  border-bottom: 3px solid #CECECE;
 }
 
 .nav__logo .nav__logo img {
@@ -349,15 +350,16 @@ input {
 .nav__menu {
   position: relative;
   background-color: #F2F2F2;
+  border-bottom: 3px solid #CECECE;
 }
 
 .nav__list {
   display: flex;
-  flex-direction: row !important;
-  flex-wrap: wrap !important;
-  justify-content: center !important;
-  color: #4B4B4B;
-  gap: 10%;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: space-evenly;
+    color: #4B4B4B;
+    transform: none !important;
 }
 
 .nav__link {
@@ -366,6 +368,7 @@ input {
   text-transform: uppercase;
   font-size: 16px;
   cursor: pointer;
+  transform: skewX(-30deg);
 }
 
 .nav__link.active {
@@ -373,11 +376,25 @@ input {
 }
 
 #menu {
-  padding-top: 20px;
   background-color: #F2F2F2;
   height: auto;
-  padding-bottom: 20px !important;
-  
+}
+
+.nav__item {
+  border-right: 3px solid #CECECE;
+  line-height: 0;
+  height: 40px;
+  /* justify-items: center; */
+  display: flex;
+  align-items: center;
+  text-align: center !important;
+  /* width: auto; */
+  /* padding-left: 20px; */
+  /* text-align: center; */
+  padding-right: 40px;
+  padding-left: 20px;
+  overflow: hidden;
+  transform:skewX(30deg);
 }
 
 /*=============== ABOUT ===============*/
@@ -424,7 +441,7 @@ input {
   z-index: 0;
   width: 70%;
   left: 30%;
-  top: 60%;
+  top: 90%;
 }
 
 .about__img iframe {
@@ -459,12 +476,11 @@ input {
 .about__content i {
   padding-right: 30px;
   margin: 0%;
-  z-index: 99999999;
 }
 
 .about__content{
   display: inline;
-  z-index: 3;
+  z-index: 1;
 }
 /*=============== DISCOVER ===============*/
 .discover__card {
@@ -1022,7 +1038,7 @@ input {
 
 }
 
-@media screen and (max-width: 546px) {
+@media screen and (max-width: 570px) {
   .home__data {
     text-align: left;
     padding: 0;
@@ -1051,7 +1067,7 @@ input {
     left: 0;
     width: 50%;
     margin-left: auto;
-    margin-top: 100%;
+    margin-top: 80%;
   }
   .about__img {
     margin-right: auto;
@@ -1059,7 +1075,7 @@ input {
     position: absolute;
     width: 100%;
     margin: 0;
-    top: 120%;
+    top: 130%;
     left: 0;
   }
 
@@ -1119,6 +1135,7 @@ input {
     width: 100%;
     flex-wrap: wrap !important;
     justify-content: center !important;
+    border-bottom: none;
   }
   
   .nav__logo, .nav__toggle {
@@ -1133,20 +1150,23 @@ input {
   .nav__menu {
     position: relative;
     background-color: #F2F2F2;
+    border-bottom: none;
   }
 
   .nav__item {
-    padding: 2% !important;
+    transform: skewX(0deg);
+    border-bottom: 1px solid #CECECE;
+    padding: 0;
+    border-right: none;
   }
   
   .nav__list {
     display: flex;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
     color: #4B4B4B;
-    row-gap: 1rem;
-    column-gap: 2rem !important;
+    align-content: stretch;
   }
   
   .nav__link {
@@ -1154,17 +1174,11 @@ input {
     font-weight: var(--font-semi-bold);
     text-transform: uppercase;
     cursor: pointer;
+    transform: skewX(0deg);
   }
 
   #menu {
     background-color: #F2F2F2;
-    height: auto;
-    padding: 30px;
-  }
-}
-
-@media screen and (min-height: 640px) {
-  .about__img {
-    top: 100%;
+    border-bottom: none;
   }
 }
