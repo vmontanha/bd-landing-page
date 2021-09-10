@@ -62,7 +62,7 @@
     width: 70%;
     height: 100%;
     box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
-    padding: 3rem;
+    padding: 2rem;
     transition: .4s;
   }
 }
@@ -70,13 +70,13 @@
 .nav__list__top {
   display: flex;
   flex-direction: column;
-  row-gap: 2.5rem;
+  row-gap: 2.5rem !important;
 }
 
 .nav__link__top {
   color: var(--text-color-light);
   font-weight: var(--font-semi-bold);
-  font-size: 1rem;
+  font-size: 30px !important;
 }
 
 .nav__link__top:hover {
@@ -1061,7 +1061,7 @@ input {
     display: flex;
     flex-direction: column;
     column-gap: 2.5rem;
-    padding-bottom: 5%;
+    margin-bottom: 10%;
   }
 
 }
