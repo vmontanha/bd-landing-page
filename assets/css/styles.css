@@ -34,7 +34,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
 }
 
 .nav__logo__top, .nav__toggle {
@@ -52,7 +51,6 @@
 
 .nav__menu__top {
   position: relative;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
