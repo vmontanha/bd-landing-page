@@ -1057,10 +1057,11 @@ input {
     display: none;
   }
   
-  .nav__list__top {
+  .nav__link__top {
     display: flex;
     flex-direction: column;
     column-gap: 2.5rem;
+    padding-bottom: 5%;
   }
 
 }
