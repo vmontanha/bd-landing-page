@@ -58,8 +58,8 @@
     position: fixed;
     background-color: #F2F2F2;
     top: 0;
-    right: -100%;
-    width: 80%;
+    right: -150%;
+    width: 90%;
     height: 100%;
     box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
     padding: 2rem;
