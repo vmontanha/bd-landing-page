@@ -549,6 +549,7 @@ input {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3%;
+  letter-spacing: 1px;
 }
 
 .about__img {
@@ -556,12 +557,12 @@ input {
   z-index: 0;
   width: 70%;
   left: 30%;
-  top: 90%;
+  top: 70%;
 }
 
-.about__img iframe {
+.about__img model-viewer {
   position: absolute;
-  height: 350px;
+  height: 500px;
   z-index: 1;
   width: 100%;
 }
@@ -1066,7 +1067,7 @@ input {
     padding-top: 20px;
   }
 
-  iframe {
+  model-viewer {
     position: static;
     margin: 0;
     height: 40vh !important;
