@@ -19,7 +19,11 @@
     <!-- or the reference on CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <script src="assets/model/script.js"></script>
+
+    <link rel="stylesheet" href="assets/model/styles.css">
     <title>BD Produtos</title>
 </head>
 
@@ -38,15 +42,15 @@
                         <a onclick="openCity(event, 'Paris')" class="nav__link__top tablinks">Preparo</a>
                     </li>
                     <li class="nav__item__top">
-                        <a  class="nav__link__top">Inserção</a>
+                        <a class="nav__link__top">Inserção</a>
                     </li>
                     <li class="nav__item__top">
-                        <a  class="nav__link__top">Estabilização</a>
+                        <a class="nav__link__top">Estabilização</a>
                     </li>
                     <li class="nav__item__top">
                         <a class="nav__link__top">Manutenção</a>
                     </li>
-                    
+
                 </ul>
 
                 <i class="ri-close-line nav__close__top" id="nav-close"></i>
@@ -79,10 +83,10 @@
                             <a onclick="openCity(event, 'London')" class="nav__link tablinks active">Seleção</a>
                         </li>
                         <li class="nav__item">
-                            <a  onclick="openCity(event, 'Paris')" class="nav__link tablinks">Preparo</a>
+                            <a onclick="openCity(event, 'Paris')" class="nav__link tablinks">Preparo</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link">Inserção</a>
+                            <a onclick="openCity(event, 'Brazil')" class="nav__link tablinks">Inserção</a>
                         </li>
                         <li class="nav__item">
                             <a class="nav__link">Conexão</a>
@@ -94,7 +98,7 @@
                             <a class="nav__link">Manutenção</a>
                         </li>
                     </ul>
-                </div> 
+                </div>
             </nav>
         </section>
 
@@ -117,16 +121,17 @@
                             tristique sem
                     </div>
                     <div class="about__content">
-                        <img style="cursor: pointer; width: 40px; margin-bottom: 10px;" src="assets/img/ar__icon.jpeg" class="audio-in" id="exploding-view"><br>
+                        <img style="cursor: pointer; width: 40px; margin-bottom: 10px;" src="assets/img/ar__icon.jpeg"
+                            class="audio-in" id="exploding-view"><br>
                         Veja em Realidade Aumentada
                     </div>
                 </div>
                 <div class="about__img">
                     <iframe id="test"
-                    src="https://www.vectary.com/viewer/v1/?model=7aa4e5a8-8a4b-4b65-aaac-a00e036daab6&env=studio1&noAr=1&panX=0&panY=0"
-                    frameborder="0" width="100%" height="800"></iframe>
+                        src="https://www.vectary.com/viewer/v1/?model=7aa4e5a8-8a4b-4b65-aaac-a00e036daab6&env=studio1&noAr=1&panX=0&panY=0"
+                        frameborder="0" width="100%" height="800"></iframe>
                 </div>
-                
+
             </div>
             <div class="about__container grid tabcontent" id="Paris">
                 <div class="about__data ">
@@ -143,15 +148,46 @@
                     </div>
                     </p>
                     <div class="about__content">
-                        <img style="cursor: pointer; width: 40px; margin-bottom: 10px;" src="assets/img/ar__icon.jpeg" class="audio-in" id="exploding-view"><br>
+                        <img style="cursor: pointer; width: 40px; margin-bottom: 10px;" src="assets/img/ar__icon.jpeg"
+                            class="audio-in" id="exploding-view"><br>
                         Veja em Realidade Aumentada
                     </div>
                 </div>
-            
+
                 <div class="about__img">
                     <iframe id="3ef13c1f-5755-4935-9d49-1ef63b71424d"
                         src="https://www.vectary.com/viewer/v1/?model=3ef13c1f-5755-4935-9d49-1ef63b71424d&env=studio1&noAr=1&panX=0&panY=0"
                         frameborder="0" width="100%" height="800"></iframe>
+                </div>
+            </div>
+            <div class="about__container grid tabcontent" id="Brazil">
+                <div class="about__data ">
+                    <span class="about__description" style="color: #F26722;">Anestesia</span>
+                    <h1 class="section__title about__title">BD Horse</h1>
+                    <div class="about__grey">
+                        <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Integer vitae nisi non odio ornare luctus. Nullam non enim est. Proin
+                            eu finibus nibh, id volutpat tortor. Pellentesque mi nisi, finibus vel
+                            placerat vel, feugiat ut ligula. Aliquam sapien tortor, ornare vel convallis
+                            non, commodo nec risus. Sed convallis blandit lorem nec mollis. Proin porta
+                            volutpat quam, vel lobortis sem iaculis et. Integer et aliquam orci, non
+                            tristique sem
+                    </div>
+                    </p>
+                    <div class="about__content">
+                        <img style="cursor: pointer; width: 40px; margin-bottom: 10px;" src="assets/img/ar__icon.jpeg"
+                            class="audio-in" id="exploding-view"><br>
+                        Veja em Realidade Aumentada
+                    </div>
+                </div>
+
+                <div class="about__img">
+                    <model-viewer style="width: 95%; height: 500px;" disable-zomm src="assets/model/BDNexina_GLB.glb" poster="assets/model/poster.webp" camera-controls auto-rotate ar-modes="scene-viewer webxr quick-look">
+                        <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+                            👋 Activate AR
+                        </button>
+                    </model-viewer>
+                    
                 </div>
             </div>
         </section>
@@ -164,13 +200,17 @@
                 <div class="footer__content grid">
                 </div>
                 <img class="logo-footer" src="assets/img/Logo_BD_SVG.svg" alt="Logo BD">
-                <p class="footer__copy">Conforme requerido, o(s) produto(s) BD citado(s) encontram-se devidamente regularizado(s) junto à ANVISA. Para mais informações, contacte à BD em SAC: 0800 055 5654 
+                <p class="footer__copy">Conforme requerido, o(s) produto(s) BD citado(s) encontram-se devidamente
+                    regularizado(s) junto à ANVISA. Para mais informações, contacte à BD em SAC: 0800 055 5654
                     ou cs_brasil@bd.com.
                     BD-XXXXXXXXXXXXXXX</p>
             </div>
         </div>
-        </div>
     </footer>
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer@0.10.0/dist/model-viewer.min.js">
+    </script>
+
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
 </body>
