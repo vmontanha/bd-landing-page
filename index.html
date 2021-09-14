@@ -21,10 +21,8 @@
 
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-    <script src="assets/model/script.js"></script>
 
-
-    <link rel="stylesheet" href="assets/model/styles.css">
+    <link rel="stylesheet" href="assets/model 2/styles.css">
 
     <title>BD Produtos</title>
 </head>
@@ -123,12 +121,32 @@
                             tristique sem
                     </div>
                     <div class="about__content">
-                        
+
                     </div>
                 </div>
                 <div class="about__img">
-                    <model-viewer src="assets/model/BDNexina_GLB.glb" poster="assets/model/poster.webp" ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate>
-                        <button slot="ar-button" id="ar-button">
+                    <model-viewer src="assets/model 2/BDNexina_GLB.glb" poster="assets/model 2/poster.webp"
+                        ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate>
+                        <button slot="ar-button" style="
+                        background-image: url(ar_icon.png);
+                        background-repeat: no-repeat;
+                        background-size: 20px 20px;
+                        background-position: 12px 50%;
+                        background-color: #fff;
+                        position: relative;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        white-space: nowrap;
+                        bottom: 16px;
+                        padding: 0px 16px 0px 40px;
+                        font-family: Roboto Regular, Helvetica Neue, sans-serif;
+                        font-size: 14px;
+                        color:#0f3788;
+                        height: 36px;
+                        line-height: 36px;
+                        border-radius: 18px;
+                        border: 1px solid #0f3788;
+                        ">
                             Veja em Realidade Aumentada
                         </button>
                     </model-viewer>
@@ -150,12 +168,13 @@
                     </div>
                     </p>
                     <div class="about__content">
-                        
+
                     </div>
                 </div>
 
                 <div class="about__img">
-                    <model-viewer src="assets/model/BDNexina_GLB.glb" poster="assets/model/poster.webp" ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate>
+                    <model-viewer src="assets/model/BDNexina_GLB.glb" poster="assets/model/poster.webp"
+                        ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate>
                         <button slot="ar-button" id="ar-button">
                             Veja em Realidade Aumentada
                         </button>
