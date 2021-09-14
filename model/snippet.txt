@@ -1,0 +1,6 @@
+<model-viewer src="BDNexina_GLB.glb" poster="poster.webp" ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate exposure="0.66" shadow-intensity="0">
+
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+</model-viewer>

@@ -15,7 +15,6 @@ model-viewer {
   background-color: transparent;
 }
 
-
 #ar-button {
   background-image: url(ar_icon.png);
   background-repeat: no-repeat;
@@ -30,11 +29,11 @@ model-viewer {
   padding: 0px 16px 0px 40px;
   font-family: Roboto Regular, Helvetica Neue, sans-serif;
   font-size: 14px;
-  color:#0f3788;
+  color:#4285f4;
   height: 36px;
   line-height: 36px;
   border-radius: 18px;
-  border: 1px solid #0f3788;
+  border: 1px solid #DADCE0;
 }
 
 #ar-button:active {

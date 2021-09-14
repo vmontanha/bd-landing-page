@@ -21,8 +21,7 @@
 
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-
-    <link rel="stylesheet" href="assets/model 2/styles.css">
+    <link rel="stylesheet" href="model/model.css">
 
     <title>BD Produtos</title>
 </head>
@@ -125,35 +124,15 @@
                     </div>
                 </div>
                 <div class="about__img">
-                    <model-viewer src="assets/model 2/BDNexina_GLB.glb" poster="assets/model 2/poster.webp"
-                        ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate>
-                        <button slot="ar-button" style="
-                        background-image: url(ar_icon.png);
-                        background-repeat: no-repeat;
-                        background-size: 20px 20px;
-                        background-position: 12px 50%;
-                        background-color: #fff;
-                        position: relative;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        white-space: nowrap;
-                        bottom: 16px;
-                        padding: 0px 16px 0px 40px;
-                        font-family: Roboto Regular, Helvetica Neue, sans-serif;
-                        font-size: 14px;
-                        color:#0f3788;
-                        height: 36px;
-                        line-height: 36px;
-                        border-radius: 18px;
-                        border: 1px solid #0f3788;
-                        ">
-                            Veja em Realidade Aumentada
-                        </button>
+                    <model-viewer src="model/BDNexina_GLB.glb" poster="model/poster.webp" ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate exposure="0.66" shadow-intensity="0">
                     </model-viewer>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
                 </div>
 
             </div>
-            <div class="about__container grid tabcontent" id="Paris">
+            <!-- <div class="about__container grid tabcontent" id="Paris">
                 <div class="about__data ">
                     <span class="about__description" style="color: #F26722;">Anestesia</span>
                     <h1 class="section__title about__title">BD SmartSite™</h1>
@@ -173,14 +152,8 @@
                 </div>
 
                 <div class="about__img">
-                    <model-viewer src="assets/model/BDNexina_GLB.glb" poster="assets/model/poster.webp"
-                        ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate>
-                        <button slot="ar-button" id="ar-button">
-                            Veja em Realidade Aumentada
-                        </button>
-                    </model-viewer>
                 </div>
-            </div>
+            </div> -->
             <!-- <div class="about__container grid tabcontent" id="Brazil">
                 <div class="about__data ">
                     <span class="about__description" style="color: #F26722;">Anestesia</span>
