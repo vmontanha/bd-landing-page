@@ -884,7 +884,9 @@ input {
     max-width: 1400px;
   }
   .container__logo {
-    max-width: 1900px;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
