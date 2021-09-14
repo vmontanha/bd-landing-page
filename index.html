@@ -124,11 +124,12 @@
                     </div>
                 </div>
                 <div class="about__img">
-                    <model-viewer src="model/BDNexina_GLB.glb" poster="model/poster.webp" ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate exposure="0.66" shadow-intensity="0">
+                    <model-viewer ar src="model/BDNexina_GLB.glb" ios-src="model/BDNexiva_USDZ.usdz" xr-environment poster="model/poster.webp" disable-zoom ar-modes="scene-viewer webxr" camera-controls auto-rotate exposure="0.66" shadow-intensity="0">
+                        <button slot="ar-button">
+                            View in your space
+                        </button>
                     </model-viewer>
-                    <button slot="ar-button" id="ar-button">
-                        View in your space
-                    </button>
+                    
                 </div>
 
             </div>
