@@ -873,7 +873,7 @@ input {
   }
   .about__img {
     margin-top: 20px;
-    top: 70vh;
+    top: 75vh;
     left: 40%;
     margin-left: auto;
     margin-right: auto;
@@ -925,7 +925,7 @@ input {
   }
 
   .container__novo {
-    width: 80%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1066,7 +1066,7 @@ input {
     margin-bottom: 10%;
   }
   .container__novo {
-    width: 80%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
   }
