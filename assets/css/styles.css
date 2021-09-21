@@ -439,17 +439,20 @@ input {
 
 .nav__list {
   display: flex;
-  flex-direction: row !important;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: center;
   color: #4B4B4B;
   transform: none !important;
+  align-items: center;
+  align-content: stretch;
+  flex-wrap: nowrap;
 }
 
 .nav__link {
   color: #4B4B4B;
   font-weight: var(--font-semi-bold);
   /* text-transform: uppercase; */
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   transform: skewX(-30deg);
   text-align: center;
@@ -686,18 +689,6 @@ input {
 /*=============== MEDIA QUERIES ===============*/
 /* For medium devices */
 @media screen and (min-width: 568px) {
-  .video__container {
-    display: grid;
-    grid-template-columns: .6fr;
-    justify-content: center;
-  }
-  .place__container {
-    grid-template-columns: repeat(3, max-content);
-  }
-  .subscribe__form {
-    width: 470px;
-    margin: 0 auto;
-  }
   .nav {
     height: 100px
   }
@@ -773,7 +764,12 @@ input {
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
-  
+  .nav__item {
+    padding-right: 5% !important;
+    overflow: visible;
+    padding-left: 5% !important;
+    flex-wrap: nowrap;
+  }
   .home__container {
     grid-template-rows: 2fr .5fr;
   }
@@ -834,10 +830,6 @@ input {
   .footer__content {
     justify-items: center;
   }
-  .nav__item {
-    padding-right: 50px;
-    overflow: visible;
-  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -850,6 +842,13 @@ input {
     margin-top: 10%;
   }
 
+  .nav__item {
+    padding-right: 6% !important;
+    overflow: visible;
+    padding-left: 6% !important;
+    flex-wrap: nowrap;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -857,21 +856,36 @@ input {
     margin-top: 40vh;
     width: 100%;
   }
+  .nav__item {
+    padding-right: 5.5%;
+    overflow: visible;
+    padding-left: 5.5%;
+    flex-wrap: nowrap;
+  }
+}
 
+@media screen and (min-width: 1600px) {
   .nav__item {
     padding-right: 6.5% !important;
     overflow: visible;
     padding-left: 6.5% !important;
     flex-wrap: nowrap;
   }
-}
+  .about__img {
+    margin-top: 20px;
+    top: 70vh;
+    left: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+}
 
 @media screen and (min-width: 720px) {
   .nav__item {
-    padding-right: 4.2%;
+    padding-right: 3%;
     overflow: visible;
-    padding-left: 4.2%;
+    padding-left: 3%;
     flex-wrap: nowrap;
   }
   .nav__list__top {
@@ -885,7 +899,7 @@ input {
   }
 
   .container__novo {
-    width: 80%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
   }
