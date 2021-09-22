@@ -36,17 +36,12 @@
     </model-viewer>
 
     <script>
-        function click(arButton) {
-            var element = document.getElementById(arButton);
-            if (element.click)
-                element.click();
-            else if (document.createEvent) {
-                var eventObj = document.createEvent('MouseEvents');
-                eventObj.initEvent('click', true, true);
-                element.dispatchEvent(eventObj);
+        function click() {
+            var element = document.getElementById('ar-button');
+            if(element.click != true) {
+                click(element);
             }
         }
-
         click('ar-button');
     </script>
 </body>
