@@ -867,7 +867,7 @@ input {
     flex-wrap: nowrap;
   }
   .section__about {
-    padding: 6rem 0 14rem !important;
+    padding: 6rem 0 12rem !important;
   }
 
   .about__img {
@@ -915,7 +915,7 @@ input {
   }
 
   .section__about {
-    padding: 6rem 0 18rem !important;
+    padding: 6rem 0 12rem !important;
   }
 
 }
@@ -966,7 +966,9 @@ input {
   #menu {
     display: none;
   }
-
+  .about__content {
+    display: none !important;
+  }
   .container__novo {
     width: 85%;
     margin-left: auto;
@@ -1010,11 +1012,15 @@ input {
     text-align: left;
     padding: 0;
     width: 100%;
-    margin-top: 35%;
+    margin-top: 50%;
+  }
+
+  .about__content {
+    display: none !important;
   }
 
   .section__about {
-    padding: 6rem 0 16rem;
+    padding: 6rem 0 6rem;
   }
 
   .about__div {
@@ -1025,6 +1031,34 @@ input {
   .about__div span {
     margin-right: auto;
     margin-left: auto;
+  }
+
+  #ar-model {
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    overflow: hidden;
+  }
+
+  #ar-model model-viewer {
+    position: static;
+    margin: 0;
+    width: 100% !important;
+    height: 100vh !important;
+  }
+
+  #ar-model #ar-button{
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3;
   }
 
   #footer {
@@ -1133,6 +1167,12 @@ input {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #model__body {
+    width: 100%;
+    height: 100% !important;
+    overflow: hidden !important;
   }
 
 }
