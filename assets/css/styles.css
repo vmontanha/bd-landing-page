@@ -882,6 +882,11 @@ input {
     width: 750px;
     height: 750px;
   }
+
+  .about__img iframe {
+    width: 750px;
+    height: 750px;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -900,6 +905,11 @@ input {
   }
 
   .about__img model-viewer {
+    width: 750px;
+    height: 750px;
+  }
+
+  .about__img iframe {
     width: 750px;
     height: 750px;
   }
@@ -1098,6 +1108,13 @@ input {
     margin: 0;
     height: 40vh !important;
   }
+
+  iframe {
+    position: static;
+    margin: 0;
+    height: 40vh !important;
+  }
+
   #menu {
     display: none;
   }
