@@ -26,7 +26,7 @@
     <title>BD Produtos</title>
 </head>
 
-<body>
+<body onload="click">
     <model-viewer ar ar-scale="auto" src="model/BDNexina_GLB.glb" ios-src="model/BDNexiva_USDZ.usdz"
         poster="model/poster.webp" disable-zoom ar-modes="webxr" camera-controls auto-rotate exposure="0.66"
         shadow-intensity="0">
@@ -34,4 +34,19 @@
             Veja em Realidade Aumentada
         </button>
     </model-viewer>
+
+    <script>
+        function click(arButton) {
+            var element = document.getElementById(arButton);
+            if (element.click)
+                element.click();
+            else if (document.createEvent) {
+                var eventObj = document.createEvent('MouseEvents');
+                eventObj.initEvent('click', true, true);
+                element.dispatchEvent(eventObj);
+            }
+        }
+
+        click('ar-button');
+    </script>
 </body>

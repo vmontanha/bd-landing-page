@@ -867,7 +867,7 @@ input {
     flex-wrap: nowrap;
   }
   .section__about {
-    padding: 6rem 0 14rem;
+    padding: 6rem 0 14rem !important;
   }
 
   .about__img {
@@ -915,7 +915,7 @@ input {
   }
 
   .section__about {
-    padding: 6rem 0 18rem;
+    padding: 6rem 0 18rem !important;
   }
 
 }
@@ -955,6 +955,10 @@ input {
   .home__data {
     margin-top: 20vh;
     width: 100%;
+  }
+
+  .section__about {
+    padding: 6rem 0 12rem;
   }
 }
 
