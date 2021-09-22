@@ -1052,15 +1052,6 @@ input {
     height: 100vh !important;
   }
 
-  #ar-model #ar-button{
-    position: absolute;
-    bottom: 10vh;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 3;
-  }
-
   #footer {
     background-image: url('../img/Rectangle\ 33.png');
     background-repeat: no-repeat;
