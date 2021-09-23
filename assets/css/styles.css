@@ -1199,6 +1199,7 @@ input {
     margin: 0;
     top: 0 !important;
     height: 100vh !important;
+    background-color: rgba(255, 4, 213, 0.185) !important;
   }
 
   /* iframe {
