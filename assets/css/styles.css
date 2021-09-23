@@ -1195,7 +1195,7 @@ input {
   }
 
   model-viewer {
-    position: static;
+    position: absolute;
     margin: 0;
     height: 100vh !important;
   }
