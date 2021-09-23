@@ -1126,7 +1126,7 @@ input {
     left: 0;
     width: 70%;
     margin-left: auto;
-    margin-top: 110%;
+    margin-top: 90%;
   }
   .about__img {
     margin-right: auto;
@@ -1200,11 +1200,11 @@ input {
     height: 100vh !important;
   }
 
-  iframe {
+  /* iframe {
     position: static;
     margin: 0;
     height: 40vh !important;
-  }
+  } */
 
   #menu {
     display: none;
