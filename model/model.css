@@ -22,7 +22,7 @@ model-viewer {
   background-position: 12px 50%;
   background-color: #fff;
   position: absolute;
-  top: 70%;
+  top: 60%;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
@@ -55,7 +55,7 @@ model-viewer {
   background-position: 12px 50%;
   background-color: #fff;
   position: absolute;
-  top: 80%;
+  top: 60%;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
