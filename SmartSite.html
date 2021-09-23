@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/img/logo-reduzido.png" type="image/png">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- or the reference on CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <link rel="stylesheet" href="model/model.css">
+
+    <title>BD Produtos</title>
+</head>
+
+<body id="model__body">
+    <header class="header" id="header">
+        <nav class="nav__top nav__logo container__novo">
+            <a href="index.html" class="nav__logo">
+                <img src="assets/img/Logo_BD_SVG.svg" style="width: 90px;" alt="">
+            </a>
+        </nav>
+    </header>
+    <model-viewer ar ar-scale="auto" src="model/BD_SmartSite.glb" ios-src="model/"
+        ar-modes="webxr" camera-controls auto-rotate exposure="0.66"
+        shadow-intensity="0">
+        <button slot="ar-button" id="ar-button-model">
+            Veja em Realidade Aumentada
+        </button>
+    </model-viewer>
+
+</body>
