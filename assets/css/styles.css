@@ -51,6 +51,21 @@
   cursor: pointer;
 }
 
+.nav__voltar {
+  font-size: 1rem;
+  cursor: pointer;
+  color: #FFF;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav__voltar i {
+  color: #FFF;
+  font-size: 2rem !important;
+}
+
 .nav__menu__top {
   position: relative;
 }
@@ -1207,8 +1222,7 @@ input {
     position: absolute !important;
     margin: 0 !important;
     width: 100%;
-    height: 100%;
-    z-index: var(--z-fixed) !important;
+    height: 100%;;
     top: 0 !important;
     height: 100vh !important;
     overflow: hidden !important;
