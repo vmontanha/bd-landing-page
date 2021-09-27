@@ -265,7 +265,7 @@ input {
 }
 
 .section__title {
-  font-size: var(--h2-font-size);
+  font-size: 12vw;
   color: var(--title-color);
   text-transform: capitalize;
   margin-bottom: var(--mb-2);
@@ -339,7 +339,7 @@ input {
 }
 
 .home__data-title {
-  font-size: var(--biggest-font-size);
+  font-size: 12vw;
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-2-5);
 }
@@ -539,7 +539,7 @@ input {
 }
 .about__div span {
   margin-right: auto;
-  margin-bottom: var(--mb-1);
+  font-size: 6vw;
 }
 .change__products{
   font-size: 24px;
@@ -1141,7 +1141,7 @@ input {
   .about__grey {
     margin-right: auto;
     left: 0;
-    width: 70%;
+    width: auto;
     margin-left: auto;
     margin-top: 130%;
   }
@@ -1179,6 +1179,7 @@ input {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
+    font-size: 3vw;
   }
   .audio-in {
     font-size: 30px;
