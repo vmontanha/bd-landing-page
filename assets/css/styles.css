@@ -265,7 +265,7 @@ input {
 }
 
 .section__title {
-  font-size: 12vw;
+  font-size: 6vw;
   color: var(--title-color);
   text-transform: capitalize;
   margin-bottom: var(--mb-2);
@@ -334,12 +334,12 @@ input {
   display: block;
   font-family: var(--body-font) !important;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 2vw;
   margin-bottom: var(--mb-0-75);
 }
 
 .home__data-title {
-  font-size: 12vw;
+  font-size: 6vw;
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-2-5);
 }
@@ -539,7 +539,7 @@ input {
 }
 .about__div span {
   margin-right: auto;
-  font-size: 6vw;
+  font-size: 20px;
 }
 .change__products{
   font-size: 24px;
@@ -702,7 +702,7 @@ input {
 }
 
 .footer__copy, .footer__terms-link {
-  font-size: var(--small-font-size);
+  font-size: 14px;
   color: var(--text-color-light);
   padding: 20px;
 }
@@ -1093,6 +1093,7 @@ input {
   .about__div {
     width: 100%;
     align-items: center;
+    font-size: 440px !important;
   }
 
   .about__div span {
@@ -1127,6 +1128,11 @@ input {
     background-position: top;
     background-size: cover;
     padding: 0;
+  }
+
+
+  .section__title {
+    font-size: 40px;
   }
 
   .footer__rights {
@@ -1166,6 +1172,14 @@ input {
     left: 0;
   }
 
+  .home__data-title {
+    font-size: 40px;
+  } 
+
+  .home__data-subtitle {
+    font-size: 20px;
+  }
+
   .logo-footer {
     width: 100px;
     position: relative;
@@ -1179,7 +1193,7 @@ input {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    font-size: 3vw;
+    font-size: 12px;
   }
   .audio-in {
     font-size: 30px;
