@@ -265,7 +265,7 @@ input {
 }
 
 .section__title {
-  font-size: 6vw;
+  font-size: 2vw !important;
   color: var(--title-color);
   text-transform: capitalize;
   margin-bottom: var(--mb-2);
@@ -332,14 +332,13 @@ input {
 
 .home__data-subtitle {
   display: block;
-  font-family: var(--body-font) !important;
-  font-weight: 500;
+  font-family: var(--title-font) !important;
   font-size: 2vw;
   margin-bottom: var(--mb-0-75);
 }
 
 .home__data-title {
-  font-size: 6vw;
+  font-size: 4vw;
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-2-5);
 }
