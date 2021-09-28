@@ -1158,7 +1158,7 @@ input {
     position: absolute;
     width: 100%;
     margin: 0;
-    top: 95% !important;
+    top: 100% !important;
     left: 0;
   }
 
