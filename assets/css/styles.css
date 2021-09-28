@@ -1133,6 +1133,7 @@ input {
 
   .section__title {
     font-size: 40px;
+    margin-bottom: var(--mb-1-25);
   }
 
   .footer__rights {
@@ -1149,7 +1150,7 @@ input {
     left: 0;
     width: auto;
     margin-left: auto;
-    margin-top: 125%;
+    margin-top: 130%;
   }
   
   .about__img {
