@@ -1092,7 +1092,7 @@ input {
   .about__div {
     width: 100%;
     align-items: center;
-    font-size: 440px !important;
+    font-size: 44px !important;
   }
 
   .about__div span {
@@ -1131,7 +1131,7 @@ input {
 
 
   .section__title {
-    font-size: 40px;
+    font-size: 40px !important;
     margin-bottom: var(--mb-1-25);
   }
 
