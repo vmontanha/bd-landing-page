@@ -1199,7 +1199,7 @@ input {
     position: absolute;
     width: 100%;
     margin: 0;
-    top: 230vh;
+    top: 250vh;
     left: 0;
   }
 
@@ -1209,7 +1209,7 @@ input {
     position: absolute;
     width: 100%;
     margin: 0;
-    top: 360vh !important;
+    top: 380vh !important;
     left: 0;
   }
 
