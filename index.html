@@ -82,13 +82,13 @@
                             <a onclick="openCity(event, 'London')" class="nav__link tablinks active">Seleção</a>
                         </li>
                         <li class="nav__item">
-                            <a onclick="openCity(event, 'Paris')" class="nav__link tablinks">Preparo</a>
+                            <a class="nav__link">Preparo</a>
                         </li>
                         <li class="nav__item">
-                            <a onclick="openCity(event, 'Brazil')" class="nav__link tablinks">Inserção</a>
+                            <a class="nav__link">Inserção</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link">Conexão</a>
+                            <a onclick="openCity(event, 'Brazil', 'Maxzero')" class="nav__link tablinks">Conexão</a>
                         </li>
                         <li class="nav__item">
                             <a class="nav__link">Estabilização</a>
@@ -110,7 +110,40 @@
                 <div class="about__data">
                     <div class="about__div">
                         <span class="about__description" style="color: #F26722;">Anestesia</span>
-                        <h1 class="section__title about__title">BD SmartSite Sketch Fab™</h1>
+                        <h1 class="section__title about__title">BD Nexiva™</h1>
+                    </div>
+                    <div class="about__grey">
+                        <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Integer vitae nisi non odio ornare luctus. Nullam non enim est. Proin
+                            eu finibus nibh, id volutpat tortor. Pellentesque mi nisi, finibus vel
+                            placerat vel, feugiat ut ligula. Aliquam sapien tortor, ornare vel convallis
+                            non, commodo nec risus. Sed convallis blandit lorem nec mollis. Proin porta
+                            volutpat quam, vel lobortis sem iaculis et. Integer et aliquam orci, non
+                            tristique sem
+                        </p>
+                    </div>
+                    <div class="about__content" style="text-align: center;">
+                        <img style="width: 160px; position: relative; margin-right: auto; margin-left: auto;"
+                            src="assets/img/qr_code_smartsite.png" alt=""><br>
+                        Escaneia para ver em Realidade Aumentada
+                    </div>
+                </div>
+                <div class="about__img">
+                    <model-viewer ar ar-scale="auto" src="model/BDNexina_GLB.glb" ios-src="model/BDNexiva_USDZ.usdz" ar-modes="webxr"
+                        camera-controls disable-zoom auto-rotate exposure="0.66" shadow-intensity="0">
+                        <button slot="ar-button" id="ar-button-model">
+                            Veja em Realidade Aumentada
+                        </button>
+                    </model-viewer>
+
+                </div>
+
+            </div>
+            <div class="about__container grid tabcontent" id="Brazil">
+                <div class="about__data">
+                    <div class="about__div">
+                        <span class="about__description" style="color: #F26722;">Anestesia</span>
+                        <h1 class="section__title about__title">BD SmartSite™</h1>
                     </div>
                     <div class="about__grey">
                         <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -139,11 +172,11 @@
                 </div>
 
             </div>
-            <div class="about__container grid tabcontent" id="London" style="display: block; margin-top: 100px;">
+            <div class="about__container grid tabcontent" id="Maxzero" style="margin-top: 100px;">
                 <div class="about__data">
                     <div class="about__div">
                         <span class="about__description" style="color: #F26722;">Anestesia</span>
-                        <h1 class="section__title about__title">BD SmartSite Model Viewer™ </h1>
+                        <h1 class="section__title about__title">BD MaxZero™ </h1>
                     </div>
                     <div class="about__grey">
                         <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -162,17 +195,11 @@
                     </div>
                 </div>
                 <div class="about__img__secundario">
-                    <model-viewer ar ar-scale="auto" src="model/BD_SmartSite.glb" ios-src="model/SmartSite.usdz" ar-modes="webxr quick-look"
-                        camera-controls disable-zoom auto-rotate>
-                        <button slot="ar-button" id="ar-button-model">
-                            Veja em Realidade Aumentada
-                        </button>
-                    </model-viewer>
-
+                    <iframe id="3ef13c1f-5755-4935-9d49-1ef63b71424d" src="https://www.vectary.com/viewer/v1/?model=3ef13c1f-5755-4935-9d49-1ef63b71424d&env=studio1" frameborder="0" width="100%" height="480"></iframe>
                 </div>
 
             </div>
-            <div class="about__container grid tabcontent" id="London" style="display: block; margin-top: 100px;">
+            <!-- <div class="about__container grid tabcontent" id="London" style="display: block; margin-top: 100px;">
                 <div class="about__data">
                     <div class="about__div">
                         <span class="about__description" style="color: #F26722;">Anestesia</span>
@@ -201,40 +228,8 @@
 
                 </div>
 
-            </div>
-            <!-- <div class="about__container grid tabcontent" id="Paris">
-                <div class="about__data">
-                    <div class="about__div">
-                        <span class="about__description" style="color: #F26722;">Anestesia</span>
-                        <h1 class="section__title about__title">BD SmartSite™</h1>
-                    </div>
-                    <div class="about__grey">
-                        <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Integer vitae nisi non odio ornare luctus. Nullam non enim est. Proin
-                            eu finibus nibh, id volutpat tortor. Pellentesque mi nisi, finibus vel
-                            placerat vel, feugiat ut ligula. Aliquam sapien tortor, ornare vel convallis
-                            non, commodo nec risus. Sed convallis blandit lorem nec mollis. Proin porta
-                            volutpat quam, vel lobortis sem iaculis et. Integer et aliquam orci, non
-                            tristique sem
-                        </p>
-                    </div>
-                    <div class="about__content" style="text-align: center;">
-                        <img style="width: 160px; position: relative; margin-right: auto; margin-left: auto;"
-                            src="assets/img/qr_code_smartsite.png" alt=""><br>
-                        Escaneia para ver em Realidade Aumentada
-                    </div>
-                </div>
-                <div class="about__img">
-                    <model-viewer ar ar-scale="auto" src="model/BD_SmartSite.glb" ios-src="model/" ar-modes="webxr"
-                        camera-controls disable-zoom auto-rotate exposure="0.66" shadow-intensity="0">
-                        <button slot="ar-button" id="ar-button-model">
-                            Veja em Realidade Aumentada
-                        </button>
-                    </model-viewer>
-
-                </div>
-
             </div> -->
+            <!--  -->
             <!-- <div class="about__container grid tabcontent" id="Paris">
                 <div class="about__data ">
                     <span class="about__description" style="color: #F26722;">Anestesia</span>
