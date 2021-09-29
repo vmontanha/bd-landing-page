@@ -906,7 +906,7 @@ input {
   .about__img {
     margin-top: 20px;
     top: 75vh;
-    left: 30%;
+    left: 40%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -957,15 +957,15 @@ input {
 
 @media screen and (min-width: 1600px) {
   .nav__item {
-    padding-right: 6.5% !important;
+    padding-right: 4.3% !important;
     overflow: visible;
-    padding-left: 6.5% !important;
+    padding-left: 4.3% !important;
     flex-wrap: nowrap;
   }
   .about__img {
     margin-top: 20px;
     top: 75vh;
-    left: 35%;
+    left: 50%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -994,6 +994,10 @@ input {
 
   .section__about {
     padding: 6rem 0 12rem !important;
+  }
+
+  .container__novo {
+    max-width: 60%;
   }
 
 }
@@ -1026,7 +1030,7 @@ input {
   }
 
   .about__grey {
-    width: 50%;
+    width: 80%;
     margin-right: auto !important;
     margin-left: 0 !important;
   }
@@ -1048,7 +1052,7 @@ input {
     display: none !important;
   }
   .container__novo {
-    width: 85%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
