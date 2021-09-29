@@ -269,6 +269,7 @@ input {
   color: var(--title-color);
   text-transform: capitalize;
   margin-bottom: var(--mb-2);
+  font-family: var(--title-font);
 }
 
 .grid {
@@ -1188,7 +1189,7 @@ input {
     margin-left: auto;
     position: absolute;
     width: 100%;
-    top: 100vh;
+    top: 100%;
     margin: 0;
     left: 0;
   }
@@ -1199,7 +1200,7 @@ input {
     position: absolute;
     width: 100%;
     margin: 0;
-    top: 250vh;
+    top: 220%;
     left: 0;
   }
 
@@ -1209,7 +1210,7 @@ input {
     position: absolute;
     width: 100%;
     margin: 0;
-    top: 390vh !important;
+    top: 340% !important;
     left: 0;
   }
 
