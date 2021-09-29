@@ -957,9 +957,9 @@ input {
 
 @media screen and (min-width: 1600px) {
   .nav__item {
-    padding-right: 4.3% !important;
+    padding-right: 3.8% !important;
     overflow: visible;
-    padding-left: 4.3% !important;
+    padding-left: 3.8% !important;
     flex-wrap: nowrap;
   }
   .about__img {
