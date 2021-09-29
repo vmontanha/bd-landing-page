@@ -11,6 +11,8 @@
   src: url('../fonts/SF-Pro-Text-Light.otf');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 
 /* ============== ICONES ++++++++++++++++++++ */
 
@@ -142,8 +144,8 @@
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
 
   /*========== Font and typography ==========*/
-  --body-font: 'BodyFont';
-  --title-font: 'TitleFont';
+  --body-font: 'Roboto', sans-serif;
+  --title-font: 'Roboto', sans-serif;
   --biggest-font-size: 2.5rem;
   --h1-font-size: 42px;
   --h2-font-size: 1.25rem;
@@ -222,7 +224,6 @@ body {
 
 h1, h2, h3 {
   color: var(--title-color);
-  font-weight: var(--font-semi-bold);
   font-family: var(--title-font);
 }
 
@@ -1188,7 +1189,7 @@ input {
     margin-left: auto;
     position: absolute;
     width: 100%;
-    top: 110%;
+    top: 90%;
     margin: 0;
     left: 0;
   }
