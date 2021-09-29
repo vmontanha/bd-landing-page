@@ -214,7 +214,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--body-font);
+  font-family: var(--title-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
@@ -267,9 +267,8 @@ input {
 .section__title {
   font-size: 2vw !important;
   color: var(--title-color);
-  text-transform: capitalize;
   margin-bottom: var(--mb-2);
-  font-family: var(--title-font);
+  font-family: var(--title-font) !important;
 }
 
 .grid {
