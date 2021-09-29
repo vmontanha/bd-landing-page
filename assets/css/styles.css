@@ -1189,7 +1189,7 @@ input {
     margin-left: auto;
     position: absolute;
     width: 100%;
-    top: 140%;
+    top: 125%;
     margin: 0;
     left: 0;
   }
@@ -1200,7 +1200,7 @@ input {
     position: absolute;
     width: 100%;
     margin: 0;
-    top: 250%;
+    top: 270%;
     left: 0;
   }
 
@@ -1210,7 +1210,7 @@ input {
     position: absolute;
     width: 100%;
     margin: 0;
-    top: 390% !important;
+    top: 420% !important;
     left: 0;
   }
 
