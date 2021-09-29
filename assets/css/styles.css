@@ -1181,7 +1181,7 @@ input {
     left: 0;
     width: auto;
     margin-left: auto;
-    margin-top: 110%;
+    margin-top: 120% !important;
   }
   
   .about__img {
@@ -1189,7 +1189,7 @@ input {
     margin-left: auto;
     position: absolute;
     width: 100%;
-    bottom: 50%;
+    bottom: 0%;
     margin: 0;
     left: 0;
   }
@@ -1200,7 +1200,7 @@ input {
     position: absolute;
     width: 100%;
     margin: 0;
-    bottom: 50% !important;
+    bottom: 0% !important;
     left: 0;
   }
 
