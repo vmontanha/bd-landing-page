@@ -1256,13 +1256,6 @@ input {
     padding-top: 20px;
   }
 
-  model-viewer {
-    position: absolute;
-    margin: 0;
-    width: 100%;
-    height: 50vh !important;
-  }
-
   iframe {
     position: absolute;
     margin: 0;
