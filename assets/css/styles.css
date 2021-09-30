@@ -1166,16 +1166,14 @@ input {
   } */
 
   model-viewer {
-    position: absolute;
+    position: relative;
     margin: 0;
-    top: 0% !important;
-    left: 0;
     width: 100% !important;
-    height: 50vh !important;
+    height: 100vh !important;
   }
 
  .about__img iframe {
-    position: absolute;
+    position: static;
     margin: 0;
     top: 0% !important;
     left: 0;
