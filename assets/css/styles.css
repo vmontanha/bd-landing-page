@@ -1166,8 +1166,7 @@ input {
   } */
 
   model-viewer {
-    position: absolute;
-    top: 50%;
+    position: relative;
     margin: 0;
     width: 100% !important;
     height: 80vh !important;
