@@ -1102,7 +1102,7 @@ input {
     text-align: left;
     padding: 0;
     width: 100%;
-    margin-top: 50%;
+    margin-top: 40%;
   }
 
   .about__content {
@@ -1110,13 +1110,13 @@ input {
   }
 
   .section__about {
-    padding: 6rem 0 6rem;
+    padding: 3rem 0 0rem;
   }
 
   .about__div {
     width: 100%;
     align-items: center;
-    font-size: 44px !important;
+    font-size: 40px !important;
   }
 
   .about__div span {
@@ -1146,11 +1146,20 @@ input {
     height: 50vh !important;
   }
 
- iframe {
+ .about__img iframe {
     position: absolute;
     margin: 0;
     top: 50% !important;
     left: 0;
+    width: 100%;
+    height: 50vh !important;
+  }
+
+  .about__img__secundario iframe {
+    position: absolute;
+    margin: 0;
+    top: 50% !important;
+    right: 50%;
     width: 100%;
     height: 50vh !important;
   }
@@ -1177,7 +1186,7 @@ input {
 
   #home {
     top: 0 !important;
-    height: 65vh !important;
+    height: 55vh !important;
   }
 
   .about__grey {
@@ -1191,9 +1200,8 @@ input {
   .about__img {
     margin-right: auto;
     margin-left: auto;
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: 120%;
     margin: 0;
     left: 0;
   }
@@ -1201,11 +1209,9 @@ input {
   .about__img__secundario{
     margin-right: auto;
     margin-left: auto;
-    position: absolute;
+    position: relative;
     width: 100%;
     margin: 0;
-    top: 275% !important;
-    left: 0;
   }
 
   .about__img__terceario{
