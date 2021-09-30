@@ -1350,4 +1350,7 @@ input {
     font-size: 12px;
   }
 
+  .about__container {
+    margin: 0 !important;
+  }
 }
