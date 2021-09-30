@@ -1219,6 +1219,7 @@ input {
   .about__grey {
     margin-right: auto;
     left: 0;
+    margin-top: 40px !important;
     width: auto;
     margin-left: auto;
   }
