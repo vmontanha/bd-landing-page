@@ -3,7 +3,7 @@
 }
 
 model-viewer {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 #ar-button {

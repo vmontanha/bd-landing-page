@@ -112,9 +112,10 @@
                         <span class="about__description" style="color: #F26722;">Anestesia</span>
                         <h1 class="section__title about__title">BD Nexiva™</h1>
                     </div>
-                    <div class="about__img">
-                        <model-viewer ar ar-scale="auto" src="model/BDNexina_GLB.glb" ios-src="model/BDNexiva_USDZ.usdz" ar-modes="webxr"
-                            camera-controls disable-zoom auto-rotate exposure="0.66" shadow-intensity="0">
+                    <div class="about__img" id="Nexiva">
+                        <model-viewer ar ar-scale="auto"  src="model/BDNexina_3d_AR/BDNexina_GLB.glb"
+                            ios-src="model/BDNexina_3d_AR/BDNexiva_USDZ.usdz" ar-modes="webxr quick-look"
+                            camera-controls disable-zoom auto-rotate>
                             <button slot="ar-button" id="ar-button-model">
                                 Veja em Realidade Aumentada
                             </button>
@@ -130,7 +131,7 @@
                             tristique sem
                         </p>
                     </div>
-                    
+
                     <div class="about__content" style="text-align: center;">
                         <img style="width: 160px; position: relative; margin-right: auto; margin-left: auto;"
                             src="assets/img/qr_code_smartsite.png" alt=""><br>
@@ -146,13 +147,13 @@
                         <h1 class="section__title about__title">BD SmartSite™</h1>
                     </div>
                     <div class="about__img">
-                        <div class="sketchfab-embed-wrapper" style="background: transparent;">
-                            <iframe title="SmartSite_FBX" frameborder="0" allowfullscreen mozallowfullscreen="true"
-                                webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
-                                xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
-                                src="https://sketchfab.com/models/9feb31e6168241e6bc0d5114f5a4557c/embed?autospin=1&autostart=1">
-                            </iframe>
-                        </div>
+                            <model-viewer ar ar-scale="auto" src="model/BD_SmartSite_3d_AR/BD_SmartSite_GLB.glb"
+                                ios-src="model/BDNexina_3d_AR/SmartSite_USDZ.usdz" ar-modes="webxr quick-look"
+                                camera-controls disable-zoom auto-rotate>
+                                <button slot="ar-button" id="ar-button-model">
+                                    Veja em Realidade Aumentada
+                                </button>
+                            </model-viewer>
                     </div>
                     <div class="about__grey">
                         <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -172,14 +173,20 @@
                 </div>
 
             </div>
-            <div class="about__container grid tabcontent" id="Maxzero" style="margin-top: 100px;">
+            <div class="about__container grid tabcontent" id="Maxzero" style="margin-top: 250px;">
                 <div class="about__data">
                     <div class="about__div">
                         <span class="about__description" style="color: #F26722;">Anestesia</span>
                         <h1 class="section__title about__title">BD MaxZero™ </h1>
                     </div>
                     <div class="about__img__secundario">
-                        <iframe id="3ef13c1f-5755-4935-9d49-1ef63b71424d" src="https://www.vectary.com/viewer/v1/?model=3ef13c1f-5755-4935-9d49-1ef63b71424d&env=studio1" frameborder="0" width="100%" height="480"></iframe>
+                        <model-viewer ar ar-scale="auto" src="model/BD_Maxzero_3d_AR/BDMaxZero_GLB.glb"
+                            ios-src="model/BD_Maxzero_3d_AR/BD_Maxzero_USDZ.usdz" ar-modes="webxr quick-look"
+                            camera-controls disable-zoom auto-rotate>
+                            <button slot="ar-button" id="ar-button-model">
+                                Veja em Realidade Aumentada
+                            </button>
+                        </model-viewer>
                     </div>
                     <div class="about__grey">
                         <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing
