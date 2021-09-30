@@ -79,7 +79,7 @@ model-viewer {
   background-position: 12px 50%;
   background-color: #fff;
   position: absolute;
-  bottom: -25%;
+  bottom: -15%;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
