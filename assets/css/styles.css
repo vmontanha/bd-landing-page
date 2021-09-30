@@ -1169,7 +1169,7 @@ input {
     position: relative;
     margin: 0;
     width: 100% !important;
-    height: 100vh !important;
+    height: 50vh !important;
   }
 
  .about__img iframe {
