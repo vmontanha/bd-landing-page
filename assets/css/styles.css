@@ -479,7 +479,11 @@ input {
   color: #F26722;
 }
 
-.nav__link__top.active {
+.nav__link:hover {
+  color: #F26722;
+}
+
+.nav__link__top .active {
   color: #F26722;
 }
 
