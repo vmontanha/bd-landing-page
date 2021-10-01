@@ -897,7 +897,7 @@ input {
   }
 
   .about__img__secundario {
-    top: 205%;
+    top: auto;
     left: 40%;
     margin-left: auto;
     margin-right: auto;
@@ -953,7 +953,7 @@ input {
   }
 
   .about__img__secundario {
-    top: auto;
+    top: auto !important;
     left: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -964,11 +964,6 @@ input {
     height: 750px;
   }
 
-
-  .about__img__secundario model-viewer {
-    width: 100%;
-    height: 650px;
-  }
   /* .about__img iframe {
     width: 750px;
     height: 750px;
