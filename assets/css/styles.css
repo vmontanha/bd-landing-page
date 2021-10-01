@@ -890,14 +890,14 @@ input {
     width: 100%;
   }
   .about__img {
-    top: auto;
-    left: 40%;
+    top: 90%;
+    left: 50%;
     margin-left: auto;
     margin-right: auto;
   }
 
   .about__img__secundario {
-    top: auto;
+    top: 205%;
     left: 40%;
     margin-left: auto;
     margin-right: auto;
@@ -924,7 +924,7 @@ input {
   }
 
   #Nexiva {
-    left: 40%;
+    left: 50%;
   }
 
   #Nexiva model-viewer{
@@ -947,14 +947,14 @@ input {
   }
   .about__img {
     top: auto;
-    left: 30%;
+    left: 50%;
     margin-left: auto;
     margin-right: auto;
   }
 
   .about__img__secundario {
     top: auto;
-    left: 30%;
+    left: 50%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -988,7 +988,7 @@ input {
   }
 
   #Nexiva{
-    left: 40%;
+    left: 50%;
   }
   
 }
@@ -1035,7 +1035,7 @@ input {
   }
 
   .about__img {
-    top: auto;
+    top: 90%;
     left: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -1054,11 +1054,11 @@ input {
   }
 
   #Nexiva {
-    top: 80% !important;
+    top: 90% !important;
   }
 
   .about__img__secundario {
-    top: auto;
+    top: 205%;
     left: 50%;
     margin-left: auto;
     margin-right: auto;
