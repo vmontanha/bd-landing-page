@@ -979,6 +979,15 @@ input {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .about__data {
+    width: auto;
+    /* text-align: center; */
+    z-index: 1;
+    display: flex;
+    flex-direction: column-reverse !important;
+    flex-wrap: nowrap;
+  }
   .about__div {
     width: 100%;
     margin-left: auto;
@@ -1017,16 +1026,7 @@ input {
     row-gap: 1.5rem;
     text-align: center;
     justify-content: center;
-    align-items: center;
-  }
-
-  .about__data {
-    width: 50%;
-    /* text-align: center; */
-    width: 100%;
-    z-index: 1;
-    display: inline;
-    /* grid-row: auto; */
+    align-items: center
   }
 
   .home__data-subtitle {
@@ -1035,36 +1035,14 @@ input {
 
   .about__img {
     top: auto;
-    left: 5%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    width: auto;
+    width: 100%;
   }
-
-  .about__img__secundario {
-    top: auto;
-    left: 0%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative !important;
-  }
-
   .about__img model-viewer {
     width: 100%;
     height: 500px;
-  }
-
-
-  .about__img__secundario model-viewer {
-    width: 100%;
-    height: 500px;
-    position: relative;
-  }
-
-  #Nexiva model-viewer{
-    height: 750px !important;
-    width: auto;
   }
 }
 
@@ -1086,8 +1064,9 @@ input {
     /* text-align: center; */
     width: 100%;
     z-index: 1;
-    display: inline;
-    /* grid-row: auto; */
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
   }
 
   .section__about {
