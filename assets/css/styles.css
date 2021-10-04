@@ -564,8 +564,7 @@ input {
   border-radius: 20px;
   margin-bottom: 2rem;
   font-family: var(--title-font);
-  width: 50% !important;
-  margin-left: auto;
+  width: 25% !important;
   height: fit-content;
   letter-spacing: 1px;
 }
@@ -573,7 +572,7 @@ input {
 .about__img {
   position: relative !important;
   z-index: 0;
-  width: 50%;
+  width: 100%;
   left: 0 !important;
 }
 
@@ -742,9 +741,9 @@ input {
 /* For large devices */
 @media screen and (min-width: 1024px) {
   .nav__item {
-    padding-right: 5% !important;
+    padding-right: 6.5% !important;
     overflow: visible;
-    padding-left: 5% !important;
+    padding-left: 6.5% !important;
     flex-wrap: nowrap;
   }
   .home__container {
@@ -963,6 +962,14 @@ input {
   .about__img model-viewer {
     width: auto;
     height: 700px;
+  }
+
+  .about__grey {
+    width: 30% !important;
+  }
+
+  .about__img {
+    width: 70% !important;
   }
 
 }
