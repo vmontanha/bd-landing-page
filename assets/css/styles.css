@@ -528,8 +528,13 @@ input {
 /*=============== ABOUT ===============*/
 .about__data {
   /* text-align: center; */
-  width: 50%;
+  width: 100%;
   z-index: 1;
+  display: flex;
+  /* grid-row: auto; */
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .about__div {
@@ -545,18 +550,6 @@ input {
   margin-right: auto;
   font-size: 20px;
 }
-.change__products{
-  font-size: 24px;
-  color: #04488C;
-}
-.change__items {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: left;
-  padding-top: 50px;
-}
 
 .about__grey p {
   font-size: 14px;
@@ -571,64 +564,19 @@ input {
   border-radius: 20px;
   margin-bottom: 2rem;
   font-family: var(--title-font);
-  -webkit-font-smoothing: antialiased;
-  width: 400px;
+  width: 50% !important;
   margin-left: auto;
-  margin-right: auto;
-  margin-top: 3%;
+  height: fit-content;
   letter-spacing: 1px;
 }
 
 .about__img {
-  position: absolute;
+  position: relative !important;
   z-index: 0;
   width: 50%;
-  left: 50%;
-  top: 80%;
-  z-index: 0;
+  left: 0 !important;
 }
 
-.about__img__secundario {
-  position: absolute;
-  z-index: 0;
-  width: 50%;
-  top: 210%;
-  z-index: 0;
-}
-
-.about__img__secundario model-viewer {
-  position: absolute;
-  height: 500px;
-  z-index: 1;
-  width: 100%;
-}
-
-.about__img-overlay {
-  overflow: var(--img-hidden);
-}
-
-.about__img-one {
-  width: 130px;
-}
-
-.about__img-two {
-  width: 180px;
-}
-
-.about__img-one, 
-.about__img-two {
-  transition: var(--img-transition);
-}
-
-.about__img-one:hover, 
-.about__img-two:hover {
-  transform: var(--img-scale);
-}
-
-.about__content i {
-  padding-right: 30px;
-  margin: 0%;
-}
 
 .about__content{
   display: inline;
@@ -889,12 +837,6 @@ input {
     margin-top: 40vh;
     width: 100%;
   }
-  .about__img {
-    top: 90%;
-    left: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   .about__img__secundario {
     top: auto;
@@ -903,6 +845,10 @@ input {
     margin-right: auto;
   }
 
+  .about__grey {
+    position: relative;
+    left: 0;
+  }
   .about__img model-viewer {
     width: auto;
     height: 500px;
@@ -945,12 +891,6 @@ input {
     padding-left: 3.8% !important;
     flex-wrap: nowrap;
   }
-  .about__img {
-    top: auto;
-    left: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   .about__img__secundario {
     top: auto !important;
@@ -980,10 +920,6 @@ input {
   #Nexiva model-viewer{
     height: 750px;
     width: auto;
-  }
-
-  #Nexiva{
-    left: 50%;
   }
   
 }
@@ -1015,11 +951,6 @@ input {
     width: 100%;
   }
 
-  .about__grey {
-    width: 80%;
-    margin-right: auto !important;
-    margin-left: 0 !important;
-  }
   .home__data {
     margin-top: 20vh;
     width: 100%;
@@ -1029,39 +960,9 @@ input {
     padding: 6rem 0 6rem;
   }
 
-  .about__img {
-    top: 90%;
-    left: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .about__img model-viewer {
     width: auto;
-    height: 500px;
-  }
-
-
-  .about__img__secundario model-viewer {
-    width: 100%;
-    height: 500px;
-    position: relative;
-  }
-
-  #Nexiva {
-    top: 90% !important;
-  }
-
-  .about__img__secundario {
-    top: 205%;
-    left: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #Nexiva model-viewer{
-    height: 750px !important;
-    width: auto;
+    height: 700px;
   }
 
 }
@@ -1085,6 +986,10 @@ input {
     text-align: center;
   }
 
+  .about__grey {
+    position: relative;
+    width: auto !important;
+  }
   .section__title {
     font-size: 30px;
   }
@@ -1115,15 +1020,13 @@ input {
     align-items: center;
   }
 
-  .about__grey {
-    margin-right: auto;
-    left: 0;
-    width: 100%;
-    margin-left: auto;
-  }
-
   .about__data {
-    width: 90%;
+    width: 50%;
+    /* text-align: center; */
+    width: 100%;
+    z-index: 1;
+    display: inline;
+    /* grid-row: auto; */
   }
 
   .home__data-subtitle {
@@ -1173,15 +1076,18 @@ input {
     margin-top: 40%;
   }
 
-
-  .about__img__secundario model-viewer {
-    width: 100%;
-    height: 500px;
+  .about__grey {
     position: relative;
+    width: auto !important;
   }
 
-  .about__content {
-    display: none !important;
+  .about__data {
+    width: 50%;
+    /* text-align: center; */
+    width: 100%;
+    z-index: 1;
+    display: inline;
+    /* grid-row: auto; */
   }
 
   .section__about {
@@ -1242,15 +1148,6 @@ input {
     top: 0 !important;
     height: 55vh !important;
   }
-
-  .about__grey {
-    margin-right: auto;
-    left: 0;
-    margin-top: 40px !important;
-    width: auto;
-    margin-left: auto;
-  }
-  
   .about__img {
     margin-right: auto;
     margin-left: auto;
