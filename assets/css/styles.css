@@ -483,7 +483,11 @@ input {
   color: #F26722;
 }
 
-.nav__link__top .active {
+.nav__link__top:hover {
+  color: #F26722;
+}
+
+.nav__link__top.active {
   color: #F26722;
 }
 
@@ -977,9 +981,6 @@ input {
 @media screen and (min-width: 570px) and (max-width: 720px ) {
   #menu {
     display: none;
-  }
-  .about__content {
-    display: none !important;
   }
   .container__novo {
     width: 80%;

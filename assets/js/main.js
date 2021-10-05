@@ -1,6 +1,6 @@
 
 
-function openCity(evt, cityName, product1, product2, product3, product4) {
+function openCity(evt, product1, product2, product3, product4) {
     // Declare all variables
     var i, tabcontent, tablinks;
   
@@ -17,7 +17,6 @@ function openCity(evt, cityName, product1, product2, product3, product4) {
     }
     
     // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
     document.getElementById(product1).style.display = "block";
     document.getElementById(product2).style.display = "block";
     document.getElementById(product3).style.display = "block";
