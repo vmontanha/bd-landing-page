@@ -35,6 +35,12 @@
             <div class="nav__menu__top" id="nav-menu">
                 <ul class="nav__list__top">
                     <li class="nav__item__top">
+                        <a onclick="openCity(event, 'Vancouver')" class="nav__link__top tablinks">Seleção</a>
+                    </li>
+                    <li class="nav__item__top">
+                        <a onclick="openCity(event, 'Brazil')" class="nav__link__top tablinks">Preparo</a>
+                    </li>
+                    <li class="nav__item__top">
                         <a onclick="openCity(event, 'London','PowerPicc','Salf-T-Intima','InsyteAutoguard')"
                             class="nav__link__top tablinks active">Inserção</a>
                     </li>
@@ -42,20 +48,10 @@
                         <a onclick="openCity(event,'Maxzero','Q-syte','SmartSite')"
                             class="nav__link__top tablinks">Conexão</a>
                     </li>
-                    <li class="nav__item__top">
+                    <li class="nav__item__top" style="border: none;">
                         <a onclick="openCity(event, 'Posiflush3ml', 'Posiflush5ml')"
                             class="nav__link__top tablinks">Manuntenção</a>
                     </li>
-                    <li class="nav__item__top">
-                        <a onclick="openCity(event, 'Brazil')" class="nav__link__top tablinks">Preparo</a>
-                    </li>
-                    <!-- <li class="nav__item">
-                        <a onclick="openCity(event, 'Goias')" class="nav__link tablinks">Estabilização</a>
-                    </li> -->
-                    <li class="nav__item__top">
-                        <a onclick="openCity(event, 'Vancouver')" class="nav__link__top tablinks">Seleção</a>
-                    </li>
-
                 </ul>
 
                 <i class="ri-close-line nav__close__top" id="nav-close"></i>
@@ -85,6 +81,12 @@
                 <div class="nav__menu">
                     <ul class="nav__list">
                         <li class="nav__item">
+                            <a onclick="openCity(event, 'Vancouver')" class="nav__link tablinks">Seleção</a>
+                        </li>
+                        <li class="nav__item">
+                            <a onclick="openCity(event, 'Brazil')" class="nav__link tablinks">Preparo</a>
+                        </li>
+                        <li class="nav__item">
                             <a onclick="openCity(event, 'London','PowerPicc','Salf-T-Intima','InsyteAutoguard')"
                                 class="nav__link tablinks active">Inserção</a>
                         </li>
@@ -92,18 +94,9 @@
                             <a onclick="openCity(event,'Maxzero','Q-syte','SmartSite')"
                                 class="nav__link tablinks">Conexão</a>
                         </li>
-                        <li class="nav__item">
+                        <li class="nav__item" style="border: none;">
                             <a onclick="openCity(event, 'Posiflush3ml', 'Posiflush5ml')"
                                 class="nav__link tablinks">Manuntenção</a>
-                        </li>
-                        <li class="nav__item">
-                            <a onclick="openCity(event, 'Brazil')" class="nav__link tablinks">Preparo</a>
-                        </li>
-                        <!-- <li class="nav__item">
-                            <a onclick="openCity(event, 'Goias')" class="nav__link tablinks">Estabilização</a>
-                        </li> -->
-                        <li class="nav__item" style="border-right: none;">
-                            <a onclick="openCity(event, 'Vancouver')" class="nav__link tablinks">Seleção</a>
                         </li>
                     </ul>
                 </div>
@@ -117,7 +110,6 @@
         <section class="about section__about container__novo" id="about">
             <div class="about__container grid tabcontent" id="London" style="display: block;">
                 <div class="about__div">
-                    <span class="about__description" style="color: #F26722;">Anestesia</span>
                     <h1 class="section__title about__title">BD Nexiva™</h1>
                 </div>
                 <div class="about__data">
@@ -138,7 +130,6 @@
             </div>
             <div class="about__container grid tabcontent" id="PowerPicc" style="margin-top: 250px; display: block;">
                 <div class="about__div">
-                    <span class="about__description" style="color: #F26722;">Anestesia</span>
                     <h1 class="section__title about__title">BD PowerPicc™ </h1>
                 </div>
                 <div class="about__data">
@@ -159,7 +150,6 @@
             </div>
             <div class="about__container grid tabcontent" id="Salf-T-Intima" style="display: block; margin-top: 250px;">
                 <div class="about__div">
-                    <span class="about__description" style="color: #F26722;">Anestesia</span>
                     <h1 class="section__title about__title">BD Salf-T-Intima™</h1>
                 </div>
                 <div class="about__data">
@@ -182,7 +172,6 @@
             <div class="about__container grid tabcontent" id="InsyteAutoguard"
                 style="display: block; margin-top: 250px;">
                 <div class="about__div">
-                    <span class="about__description" style="color: #F26722;">Anestesia</span>
                     <h1 class="section__title about__title">BD Insyte Autoguard™</h1>
                 </div>
                 <div class="about__data">
@@ -203,7 +192,6 @@
             </div>
             <div class="about__container grid tabcontent" id="SmartSite">
                 <div class="about__div">
-                    <span class="about__description" style="color: #F26722;">Anestesia</span>
                     <h1 class="section__title about__title">BD SmartSite™</h1>
                 </div>
                 <div class="about__data">
@@ -225,7 +213,6 @@
             </div>
             <div class="about__container grid tabcontent" id="Q-syte" style="margin-top: 250px;">
                 <div class="about__div">
-                    <span class="about__description" style="color: #F26722;">Anestesia</span>
                     <h1 class="section__title about__title">BD Q-Syte™</h1>
                 </div>
                 <div class="about__data">
@@ -247,7 +234,6 @@
             </div>
             <div class="about__container grid tabcontent" id="Maxzero" style="margin-top: 250px;">
                 <div class="about__div">
-                    <span class="about__description" style="color: #F26722;">Anestesia</span>
                     <h1 class="section__title about__title">BD MaxZero™ </h1>
                 </div>
                 <div class="about__data">
@@ -269,7 +255,6 @@
             </div>
             <div class="about__container grid tabcontent" id="Posiflush3ml">
                 <div class="about__div">
-                    <span class="about__description" style="color: #F26722;">Anestesia</span>
                     <h1 class="section__title about__title">BD Posiflush 3ml™</h1>
                 </div>
                 <div class="about__data">
@@ -290,7 +275,6 @@
             </div>
             <div class="about__container grid tabcontent" id="Posiflush5ml" style="margin-top: 250px;">
                 <div class="about__div">
-                    <span class="about__description" style="color: #F26722;">Anestesia</span>
                     <h1 class="section__title about__title">BD Posiflush 5ml™ </h1>
                 </div>
                 <div class="about__data">
@@ -311,18 +295,17 @@
             </div>
             <div class="about__container grid tabcontent" id="Brazil">
                 <div class="about__content">
-                    <h1 class="about__title__product">Não possuímos produtos nesta categoria ainda.</h1>
+                    <h1 class="about__title__product">Em breve conteúdos exclusivos para você.</h1>
                 </div>
             </div>
             <div class="about__container grid tabcontent" id="Vancouver">
                 <div class="about__content">
-                    <h1 class="about__title__product">Não possuímos produtos nesta categoria ainda.</h1>
+                    <h1 class="about__title__product">Em breve conteúdos exclusivos para você.</h1>
                 </div>
             </div>
             <!-- <div class="about__container grid tabcontent" id="London" style="display: block; margin-top: 100px;">
                 <div class="about__data">
                     <div class="about__div">
-                        <span class="about__description" style="color: #F26722;">Anestesia</span>
                         <h1 class="section__title about__title">BD SmartSite Vectary™</h1>
                     </div>
                     <div class="about__grey">
@@ -352,7 +335,6 @@
             <!--  -->
             <!-- <div class="about__container grid tabcontent" id="Paris">
                 <div class="about__data ">
-                    <span class="about__description" style="color: #F26722;">Anestesia</span>
                     <h1 class="section__title about__title">BD SmartSite™</h1>
                     <div class="about__grey">
                         <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -377,7 +359,6 @@
             </div> -->
             <!-- <div class="about__container grid tabcontent" id="Brazil">
                 <div class="about__data ">
-                    <span class="about__description" style="color: #F26722;">Anestesia</span>
                     <h1 class="section__title about__title">BD Nexiva™ - 9.6mb</h1>
                     <div class="about__grey">
                         <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing
